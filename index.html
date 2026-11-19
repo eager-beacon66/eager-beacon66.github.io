@@ -1,0 +1,1621 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>r星今日爆料_游戏资讯_每日爆料与玩家社区</title>
+<meta name="description" content="r星今日爆料官方网站，聚焦游戏行业动态、玩家爆料与深度内容，打造值得信赖的游戏资讯与创作者社区。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23111421'/%3E%3Cpath d='M20 44V20l10 12 4-6 10 18H20z' fill='%23ffcf3f'/%3E%3Ccircle cx='46' cy='22' r='5' fill='%23e5372c'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --rsb-bg:#0e1017;
+    --rsb-bg-2:#141826;
+    --rsb-panel:#191e2e;
+    --rsb-panel-2:#1f2537;
+    --rsb-line:#2b3247;
+    --rsb-txt:#e9edf7;
+    --rsb-txt-2:#a6b0c8;
+    --rsb-txt-3:#77829c;
+    --rsb-gold:#ffcf3f;
+    --rsb-red:#e5372c;
+    --rsb-cyan:#37d6d0;
+    --rsb-violet:#8a7bff;
+    --rsb-radius:16px;
+    --rsb-shadow:0 18px 40px rgba(2,5,14,.55);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;scroll-padding-top:150px}
+  body{
+    background:
+      radial-gradient(1100px 600px at 85% -10%, rgba(138,123,255,.18), transparent 60%),
+      radial-gradient(900px 520px at 0% 8%, rgba(55,214,208,.12), transparent 55%),
+      var(--rsb-bg);
+    color:var(--rsb-txt);
+    font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,sans-serif;
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none}
+  img{display:block;max-width:100%}
+  button{font-family:inherit;cursor:pointer}
+  .rsb-sticky-wrap{position:sticky;top:0;z-index:90}
+
+  /* ============ 公告条 ============ */
+  .rsb-notice{
+    background:linear-gradient(90deg,#2a1a12,#3a2011 45%,#241a30);
+    border-bottom:1px solid rgba(255,207,63,.28);
+    font-size:13px;
+    color:#ffdca6;
+  }
+  .rsb-notice__inner{
+    max-width:1240px;margin:0 auto;padding:9px 22px;
+    display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+  }
+  .rsb-notice__tag{
+    flex:0 0 auto;
+    background:var(--rsb-red);color:#fff;
+    font-size:11px;letter-spacing:1px;
+    padding:2px 9px;border-radius:4px;font-weight:700;
+  }
+  .rsb-notice__list{display:flex;gap:26px;overflow:hidden;flex:1 1 320px;flex-wrap:wrap}
+  .rsb-notice__item{white-space:nowrap;filter:saturate(1.05)}
+  .rsb-notice__item b{color:#fff3d0}
+  .rsb-notice__more{flex:0 0 auto;color:#ffe9bc;border-bottom:1px dashed rgba(255,207,63,.5);font-size:12px}
+
+  /* ============ 页头 ============ */
+  .rsb-header{
+    background:rgba(14,16,23,.88);
+    backdrop-filter:blur(14px);
+    border-bottom:1px solid var(--rsb-line);
+  }
+  .rsb-header__inner{
+    max-width:1240px;margin:0 auto;padding:12px 22px;
+    display:flex;align-items:center;gap:22px;
+  }
+  .rsb-logo{display:flex;align-items:center;gap:11px;flex:0 0 auto}
+  .rsb-logo__mark{
+    width:40px;height:40px;border-radius:11px;
+    background:linear-gradient(140deg,#22283c,#0c0f17);
+    border:1px solid #333c55;
+    display:grid;place-items:center;
+    box-shadow:inset 0 0 0 1px rgba(255,207,63,.18);
+  }
+  .rsb-logo__text{display:flex;flex-direction:column;line-height:1.15}
+  .rsb-logo__name{font-size:18px;font-weight:800;letter-spacing:.5px}
+  .rsb-logo__name em{color:var(--rsb-gold);font-style:normal}
+  .rsb-logo__slogan{font-size:11px;color:var(--rsb-txt-3);letter-spacing:2px}
+
+  .rsb-nav{display:flex;gap:4px;flex:1 1 auto;flex-wrap:wrap}
+  .rsb-nav__link{
+    font-size:14px;color:var(--rsb-txt-2);
+    padding:7px 12px;border-radius:9px;transition:.22s;
+    border:1px solid transparent;
+  }
+  .rsb-nav__link:hover{color:#fff;background:var(--rsb-panel);border-color:var(--rsb-line)}
+  .rsb-nav__link.is-active{color:var(--rsb-gold);background:rgba(255,207,63,.09);border-color:rgba(255,207,63,.3)}
+
+  .rsb-search{position:relative;flex:0 0 250px;display:flex;align-items:center}
+  .rsb-search__input{
+    width:100%;background:var(--rsb-panel);border:1px solid var(--rsb-line);
+    color:var(--rsb-txt);border-radius:10px;padding:9px 12px 9px 34px;font-size:13px;outline:none;transition:.2s;
+  }
+  .rsb-search__input:focus{border-color:var(--rsb-violet);box-shadow:0 0 0 3px rgba(138,123,255,.18)}
+  .rsb-search__icon{position:absolute;left:11px;font-size:13px;color:var(--rsb-txt-3);pointer-events:none}
+  .rsb-search__hint{
+    position:absolute;top:calc(100% + 8px);left:0;right:0;
+    background:var(--rsb-panel-2);border:1px solid var(--rsb-line);
+    border-radius:12px;padding:10px;font-size:12.5px;color:var(--rsb-txt-2);
+    box-shadow:var(--rsb-shadow);display:none;z-index:99;
+  }
+  .rsb-search__hint.is-show{display:block}
+  .rsb-search__hint b{color:var(--rsb-gold)}
+
+  .rsb-burger{
+    display:none;background:var(--rsb-panel);border:1px solid var(--rsb-line);
+    color:var(--rsb-txt);border-radius:9px;padding:7px 11px;font-size:16px;
+  }
+
+  /* ============ 通用容器 ============ */
+  .rsb-container{max-width:1240px;margin:0 auto;padding:0 22px}
+  .rsb-section{padding:64px 0}
+  .rsb-section--tight{padding:44px 0}
+  .rsb-eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:12px;letter-spacing:2px;color:var(--rsb-gold);
+    text-transform:uppercase;margin-bottom:12px;
+  }
+  .rsb-eyebrow::before{content:"";width:22px;height:2px;background:var(--rsb-gold);border-radius:2px}
+  .rsb-h2{font-size:clamp(23px,3vw,32px);line-height:1.35;letter-spacing:.5px;font-weight:800}
+  .rsb-h2 em{font-style:normal;color:var(--rsb-cyan)}
+  .rsb-section__head{display:flex;justify-content:space-between;align-items:flex-end;gap:22px;flex-wrap:wrap;margin-bottom:30px}
+  .rsb-section__desc{color:var(--rsb-txt-2);font-size:14px;max-width:640px;margin-top:8px}
+  .rsb-h3{font-size:17px;font-weight:700;line-height:1.5}
+
+  /* ============ 首屏 ============ */
+  .rsb-hero{padding:58px 0 34px;position:relative;overflow:hidden}
+  .rsb-hero__grid{display:grid;grid-template-columns:1.02fr .98fr;gap:46px;align-items:center}
+  .rsb-hero__badges{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:18px}
+  .rsb-chip{
+    font-size:11.5px;letter-spacing:.6px;color:var(--rsb-cyan);
+    border:1px solid rgba(55,214,208,.35);background:rgba(55,214,208,.08);
+    padding:4px 11px;border-radius:99px;
+  }
+  .rsb-chip--gold{color:var(--rsb-gold);border-color:rgba(255,207,63,.35);background:rgba(255,207,63,.08)}
+  .rsb-chip--violet{color:#c9bfff;border-color:rgba(138,123,255,.4);background:rgba(138,123,255,.1)}
+  .rsb-hero h1{
+    font-size:clamp(38px,6.4vw,68px);line-height:1.04;font-weight:900;letter-spacing:1px;
+    background:linear-gradient(96deg,#fff 12%,var(--rsb-gold) 62%,var(--rsb-red) 100%);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+    margin-bottom:8px;
+  }
+  .rsb-hero__sub{font-size:19px;font-weight:700;color:#dfe6f7;margin-bottom:14px;letter-spacing:.5px}
+  .rsb-hero__lead{color:var(--rsb-txt-2);font-size:14.5px;margin-bottom:22px}
+  .rsb-hero__lead b{color:var(--rsb-txt);font-weight:600}
+  .rsb-hero__actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:26px}
+  .rsb-btn{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:12px 22px;border-radius:11px;font-size:14px;font-weight:700;
+    border:1px solid transparent;transition:.22s;
+  }
+  .rsb-btn--primary{background:linear-gradient(120deg,var(--rsb-gold),#ffb02e);color:#221a02;box-shadow:0 10px 26px rgba(255,178,46,.22)}
+  .rsb-btn--primary:hover{transform:translateY(-2px);box-shadow:0 14px 32px rgba(255,178,46,.32)}
+  .rsb-btn--ghost{background:var(--rsb-panel);border-color:var(--rsb-line);color:var(--rsb-txt)}
+  .rsb-btn--ghost:hover{border-color:var(--rsb-violet);color:#fff;transform:translateY(-2px)}
+  .rsb-stats{display:flex;gap:30px;flex-wrap:wrap}
+  .rsb-stats__item{min-width:92px}
+  .rsb-stats__num{font-size:26px;font-weight:900;color:var(--rsb-gold);letter-spacing:.5px;line-height:1.2}
+  .rsb-stats__label{font-size:12px;color:var(--rsb-txt-3);letter-spacing:.6px}
+
+  .rsb-hero__visual{position:relative}
+  .rsb-hero__cover{
+    position:relative;border-radius:22px;overflow:hidden;
+    border:1px solid var(--rsb-line);box-shadow:var(--rsb-shadow);
+    aspect-ratio:16/10;background:#10131d;
+  }
+  .rsb-hero__cover img{width:100%;height:100%;object-fit:cover}
+  .rsb-hero__cover::after{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(180deg,transparent 40%,rgba(6,8,14,.85));
+  }
+  .rsb-hero__cover-meta{
+    position:absolute;left:18px;right:18px;bottom:16px;z-index:2;
+    display:flex;justify-content:space-between;align-items:flex-end;gap:12px;
+  }
+  .rsb-hero__cover-title{font-size:15px;font-weight:700;color:#fff}
+  .rsb-hero__cover-sub{font-size:12px;color:#c3cbe0}
+  .rsb-hero__float{
+    position:absolute;left:-18px;bottom:-20px;
+    background:var(--rsb-panel-2);border:1px solid var(--rsb-line);
+    border-radius:14px;padding:12px 16px;box-shadow:var(--rsb-shadow);
+    font-size:12.5px;color:var(--rsb-txt-2);display:flex;gap:10px;align-items:center;
+  }
+  .rsb-hero__float b{color:var(--rsb-cyan);font-size:16px}
+
+  /* 关键词深度解析 */
+  .rsb-about{
+    margin-top:52px;background:linear-gradient(160deg,var(--rsb-panel),#121623);
+    border:1px solid var(--rsb-line);border-radius:20px;padding:34px 34px 28px;
+    position:relative;overflow:hidden;
+  }
+  .rsb-about::before{
+    content:"“";
+    position:absolute;right:24px;top:-24px;font-size:150px;color:rgba(255,207,63,.07);font-family:Georgia,serif;
+  }
+  .rsb-about__title{font-size:20px;font-weight:800;margin-bottom:16px}
+  .rsb-about__title span{color:var(--rsb-gold)}
+  .rsb-about p{color:var(--rsb-txt-2);font-size:14.5px;margin-bottom:14px;text-align:justify}
+  .rsb-about p strong{color:var(--rsb-txt);font-weight:600}
+  .rsb-about__cols{display:grid;grid-template-columns:1fr 1fr;gap:22px 34px;margin-top:22px}
+  .rsb-about__card{
+    background:rgba(255,255,255,.025);border:1px solid var(--rsb-line);
+    border-radius:13px;padding:16px 18px;
+  }
+  .rsb-about__card h4{font-size:14px;color:var(--rsb-cyan);margin-bottom:7px}
+  .rsb-about__card p{font-size:13.5px;margin:0}
+
+  /* ============ 焦点内容 ============ */
+  .rsb-focus__grid{display:grid;grid-template-columns:1.35fr 1fr;gap:22px}
+  .rsb-focus__main{position:relative;border-radius:var(--rsb-radius);overflow:hidden;border:1px solid var(--rsb-line);min-height:340px;background:#10131d}
+  .rsb-focus__main img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+  .rsb-focus__main::after{content:"";position:absolute;inset:0;background:linear-gradient(190deg,rgba(6,8,14,.1) 20%,rgba(6,8,14,.92))}
+  .rsb-focus__main-body{position:relative;z-index:2;padding:26px;display:flex;flex-direction:column;justify-content:flex-end;height:100%;min-height:340px}
+  .rsb-focus__tag{display:inline-flex;align-self:flex-start;font-size:11px;background:var(--rsb-red);color:#fff;padding:3px 10px;border-radius:5px;font-weight:700;margin-bottom:12px;letter-spacing:1px}
+  .rsb-focus__main-body h3{font-size:22px;line-height:1.4;margin-bottom:8px}
+  .rsb-focus__main-body p{font-size:13.5px;color:#b9c3d8;max-width:520px}
+  .rsb-focus__list{display:grid;grid-template-rows:repeat(2,1fr);gap:22px}
+  .rsb-mini{display:grid;grid-template-columns:132px 1fr;gap:14px;background:var(--rsb-panel);border:1px solid var(--rsb-line);border-radius:14px;overflow:hidden;transition:.24s}
+  .rsb-mini:hover{border-color:var(--rsb-violet);transform:translateY(-3px)}
+  .rsb-mini__thumb{position:relative;overflow:hidden;min-height:100%}
+  .rsb-mini__thumb img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+  .rsb-mini__play{position:absolute;right:8px;bottom:8px;width:26px;height:26px;border-radius:50%;background:rgba(6,8,14,.72);display:grid;place-items:center;font-size:10px;color:var(--rsb-gold)}
+  .rsb-mini__body{padding:14px 14px 14px 0;display:flex;flex-direction:column;gap:6px;justify-content:center}
+  .rsb-mini__body h3{font-size:14.5px;line-height:1.45}
+  .rsb-mini__body span{font-size:12px;color:var(--rsb-txt-3)}
+
+  /* ============ 视频流 ============ */
+  .rsb-toolbar{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:22px}
+  .rsb-filter{
+    font-size:12.5px;color:var(--rsb-txt-2);background:var(--rsb-panel);border:1px solid var(--rsb-line);
+    padding:7px 15px;border-radius:99px;transition:.2s;
+  }
+  .rsb-filter:hover{color:#fff;border-color:var(--rsb-cyan)}
+  .rsb-filter.is-on{background:rgba(55,214,208,.14);border-color:rgba(55,214,208,.5);color:var(--rsb-cyan);font-weight:700}
+  .rsb-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .rsb-card{
+    background:var(--rsb-panel);border:1px solid var(--rsb-line);border-radius:var(--rsb-radius);
+    overflow:hidden;display:flex;flex-direction:column;transition:.26s;
+  }
+  .rsb-card:hover{transform:translateY(-5px);border-color:#3b4562;box-shadow:var(--rsb-shadow)}
+  .rsb-card__cover{position:relative;aspect-ratio:16/9;overflow:hidden;background:#0c0f17}
+  .rsb-card__cover img{width:100%;height:100%;object-fit:cover;transition:.4s}
+  .rsb-card:hover .rsb-card__cover img{transform:scale(1.05)}
+  .rsb-card__duration{position:absolute;right:9px;bottom:9px;background:rgba(6,8,14,.82);font-size:11px;padding:2px 7px;border-radius:4px;color:#dbe3f5}
+  .rsb-card__cat{position:absolute;left:9px;top:9px;font-size:10.5px;letter-spacing:1px;background:rgba(138,123,255,.9);color:#fff;padding:2px 8px;border-radius:4px;font-weight:700}
+  .rsb-card__body{padding:16px 17px 15px;display:flex;flex-direction:column;gap:9px;flex:1}
+  .rsb-card__body h3{font-size:15.5px;line-height:1.45}
+  .rsb-card__excerpt{font-size:13px;color:var(--rsb-txt-2);line-height:1.6}
+  .rsb-card__tags{display:flex;gap:6px;flex-wrap:wrap}
+  .rsb-card__tag{font-size:11px;color:var(--rsb-txt-3);border:1px solid var(--rsb-line);padding:1px 8px;border-radius:99px}
+  .rsb-card__foot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--rsb-line);padding-top:11px}
+  .rsb-author{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--rsb-txt-2)}
+  .rsb-avatar{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-size:12px;font-weight:800;color:#10131d;flex:0 0 auto}
+  .rsb-ops{display:flex;gap:12px;font-size:12.5px;color:var(--rsb-txt-3)}
+  .rsb-op{display:inline-flex;align-items:center;gap:4px;background:none;border:none;color:inherit;font-size:12.5px;transition:.2s}
+  .rsb-op:hover{color:var(--rsb-gold)}
+  .rsb-op.is-like{color:var(--rsb-red)}
+  .rsb-op.is-save{color:var(--rsb-gold)}
+
+  /* ============ 专题 ============ */
+  .rsb-topics{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+  .rsb-topic{
+    position:relative;border-radius:14px;overflow:hidden;border:1px solid var(--rsb-line);
+    min-height:212px;display:flex;flex-direction:column;justify-content:flex-end;
+    padding:18px;background:#10131d;transition:.26s;
+  }
+  .rsb-topic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.85;transition:.4s}
+  .rsb-topic:hover img{transform:scale(1.07)}
+  .rsb-topic::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,8,14,.05),rgba(6,8,14,.92))}
+  .rsb-topic>*{position:relative;z-index:2}
+  .rsb-topic__status{font-size:10.5px;align-self:flex-start;background:rgba(55,214,208,.9);color:#04201f;font-weight:800;padding:2px 8px;border-radius:4px;margin-bottom:9px}
+  .rsb-topic h3{font-size:15.5px;color:#fff;margin-bottom:5px}
+  .rsb-topic p{font-size:12px;color:#b5bfd4;line-height:1.55}
+
+  /* ============ 创作者 ============ */
+  .rsb-creators{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .rsb-creator{
+    background:linear-gradient(150deg,var(--rsb-panel),#121623);
+    border:1px solid var(--rsb-line);border-radius:var(--rsb-radius);padding:20px;
+    display:flex;flex-direction:column;gap:11px;transition:.24s;
+  }
+  .rsb-creator:hover{border-color:rgba(255,207,63,.42);transform:translateY(-3px)}
+  .rsb-creator__top{display:flex;gap:13px;align-items:center}
+  .rsb-creator__avatar{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;font-size:19px;font-weight:900;color:#0e1017;flex:0 0 auto}
+  .rsb-creator__name{font-size:15.5px;font-weight:800}
+  .rsb-creator__field{font-size:12px;color:var(--rsb-cyan)}
+  .rsb-creator__bio{font-size:13px;color:var(--rsb-txt-2);line-height:1.65}
+  .rsb-creator__meta{display:flex;gap:18px;font-size:12px;color:var(--rsb-txt-3);border-top:1px solid var(--rsb-line);padding-top:11px}
+  .rsb-creator__meta b{color:var(--rsb-gold);font-size:14px;margin-right:3px}
+  .rsb-creator__more{font-size:12.5px;color:var(--rsb-violet);background:none;border:none;text-align:left;padding:0}
+
+  /* ============ 作品墙 ============ */
+  .rsb-wall{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:158px;gap:14px}
+  .rsb-wall__item{position:relative;border-radius:12px;overflow:hidden;border:1px solid var(--rsb-line);background:#0c0f17}
+  .rsb-wall__item img{width:100%;height:100%;object-fit:cover;transition:.4s}
+  .rsb-wall__item:hover img{transform:scale(1.08)}
+  .rsb-wall__item figcaption{
+    position:absolute;left:0;right:0;bottom:0;padding:20px 12px 10px;
+    font-size:12px;color:#e7ecf9;background:linear-gradient(180deg,transparent,rgba(6,8,14,.9));
+  }
+  .rsb-wall__item--big{grid-column:span 2;grid-row:span 2}
+  .rsb-wall__item--wide{grid-column:span 2}
+
+  /* ============ 评价 ============ */
+  .rsb-reviews{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+  .rsb-review{
+    background:var(--rsb-panel);border:1px solid var(--rsb-line);border-radius:14px;
+    padding:18px 20px;display:flex;flex-direction:column;gap:10px;position:relative;
+  }
+  .rsb-review:nth-child(3n){background:var(--rsb-panel-2)}
+  .rsb-review__quote{font-size:14px;color:#d6deef;line-height:1.72}
+  .rsb-review__foot{display:flex;align-items:center;gap:9px;font-size:12.5px;color:var(--rsb-txt-3)}
+  .rsb-stars{color:var(--rsb-gold);letter-spacing:1px;font-size:12px}
+
+  /* ============ 榜单 ============ */
+  .rsb-rank{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  .rsb-rank__panel{background:var(--rsb-panel);border:1px solid var(--rsb-line);border-radius:16px;padding:22px}
+  .rsb-rank__title{font-size:16px;font-weight:800;margin-bottom:14px;display:flex;align-items:center;gap:9px}
+  .rsb-rank__title i{width:5px;height:17px;background:var(--rsb-red);border-radius:3px;display:inline-block}
+  .rsb-rank__row{display:flex;align-items:center;gap:13px;padding:10px 0;border-bottom:1px dashed var(--rsb-line);font-size:13.5px}
+  .rsb-rank__row:last-child{border-bottom:none}
+  .rsb-rank__no{width:24px;font-weight:900;color:var(--rsb-txt-3);font-size:14px}
+  .rsb-rank__row:nth-child(1) .rsb-rank__no,.rsb-rank__row:nth-child(2) .rsb-rank__no,.rsb-rank__row:nth-child(3) .rsb-rank__no{color:var(--rsb-gold)}
+  .rsb-rank__name{flex:1;color:var(--rsb-txt-2)}
+  .rsb-rank__val{font-size:12px;color:var(--rsb-cyan)}
+
+  /* ============ 创意工具 / 动态 ============ */
+  .rsb-split{display:grid;grid-template-columns:1.1fr .9fr;gap:24px}
+  .rsb-ideas{background:linear-gradient(150deg,#171d2e,#101420);border:1px solid var(--rsb-line);border-radius:18px;padding:26px}
+  .rsb-idea{display:flex;gap:14px;padding:14px 0;border-bottom:1px dashed var(--rsb-line)}
+  .rsb-idea:last-child{border-bottom:none}
+  .rsb-idea__no{flex:0 0 34px;height:34px;border-radius:10px;background:rgba(138,123,255,.14);color:#b9aeff;display:grid;place-items:center;font-weight:900;font-size:13px}
+  .rsb-idea h4{font-size:14px;margin-bottom:4px}
+  .rsb-idea p{font-size:12.5px;color:var(--rsb-txt-2)}
+  .rsb-log{background:var(--rsb-panel);border:1px solid var(--rsb-line);border-radius:18px;padding:26px}
+  .rsb-log__item{padding:13px 0 13px 18px;border-left:2px solid var(--rsb-line);position:relative}
+  .rsb-log__item::before{content:"";position:absolute;left:-6px;top:19px;width:10px;height:10px;border-radius:50%;background:var(--rsb-gold);box-shadow:0 0 0 4px rgba(255,207,63,.12)}
+  .rsb-log__date{font-size:11.5px;color:var(--rsb-cyan);letter-spacing:1px}
+  .rsb-log__item h4{font-size:14px;margin:3px 0}
+  .rsb-log__item p{font-size:12.5px;color:var(--rsb-txt-2)}
+
+  /* ============ FAQ & 联系 ============ */
+  .rsb-bottom{display:grid;grid-template-columns:1.15fr .85fr;gap:26px}
+  .rsb-faq__item{background:var(--rsb-panel);border:1px solid var(--rsb-line);border-radius:12px;margin-bottom:11px;overflow:hidden}
+  .rsb-faq__item summary{
+    padding:14px 18px;font-size:14px;font-weight:600;cursor:pointer;list-style:none;
+    display:flex;justify-content:space-between;align-items:center;gap:12px;
+  }
+  .rsb-faq__item summary::-webkit-details-marker{display:none}
+  .rsb-faq__item summary::after{content:"+";color:var(--rsb-gold);font-size:17px;font-weight:400;transition:.2s}
+  .rsb-faq__item[open] summary::after{transform:rotate(45deg)}
+  .rsb-faq__item p{padding:0 18px 16px;font-size:13px;color:var(--rsb-txt-2);line-height:1.7}
+
+  .rsb-contact{background:linear-gradient(160deg,#1b2133,#12161f);border:1px solid var(--rsb-line);border-radius:18px;padding:26px}
+  .rsb-contact__row{display:flex;justify-content:space-between;gap:12px;font-size:13.5px;padding:10px 0;border-bottom:1px dashed var(--rsb-line);color:var(--rsb-txt-2)}
+  .rsb-contact__row:last-of-type{border-bottom:none}
+  .rsb-contact__row b{color:var(--rsb-txt);font-weight:600}
+  .rsb-contact__btn{width:100%;justify-content:center;margin-top:16px}
+
+  /* ============ 页脚 ============ */
+  .rsb-footer{border-top:1px solid var(--rsb-line);background:rgba(9,11,17,.7);padding:44px 0 26px;margin-top:20px}
+  .rsb-footer__grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px}
+  .rsb-footer h5{font-size:13px;color:var(--rsb-txt);margin-bottom:12px;letter-spacing:1px}
+  .rsb-footer p,.rsb-footer li{font-size:12.5px;color:var(--rsb-txt-3);line-height:1.9;list-style:none}
+  .rsb-footer li:hover{color:var(--rsb-txt-2)}
+  .rsb-footer__brand{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+  .rsb-footer__copy{border-top:1px solid var(--rsb-line);margin-top:32px;padding-top:18px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--rsb-txt-3)}
+
+  /* ============ 回到顶部 & Toast & 弹窗 ============ */
+  .rsb-top{
+    position:fixed;right:20px;bottom:22px;z-index:95;
+    width:44px;height:44px;border-radius:50%;
+    background:var(--rsb-panel-2);border:1px solid var(--rsb-line);
+    color:var(--rsb-gold);font-size:16px;display:grid;place-items:center;
+    opacity:0;pointer-events:none;transition:.25s;box-shadow:var(--rsb-shadow);
+  }
+  .rsb-top.is-show{opacity:1;pointer-events:auto}
+  .rsb-toast{
+    position:fixed;left:50%;bottom:34px;transform:translate(-50%,18px);
+    background:#222a3d;border:1px solid #3a445e;color:#eef2fc;
+    padding:11px 20px;border-radius:11px;font-size:13px;z-index:200;
+    opacity:0;pointer-events:none;transition:.26s;box-shadow:var(--rsb-shadow);
+  }
+  .rsb-toast.is-show{opacity:1;transform:translate(-50%,0)}
+
+  .rsb-modal{position:fixed;inset:0;z-index:150;display:none;align-items:center;justify-content:center;padding:20px}
+  .rsb-modal.is-show{display:flex}
+  .rsb-modal__mask{position:absolute;inset:0;background:rgba(4,6,12,.76);backdrop-filter:blur(3px)}
+  .rsb-modal__panel{
+    position:relative;z-index:2;background:var(--rsb-panel);border:1px solid #3a445e;
+    border-radius:18px;max-width:560px;width:100%;padding:26px;box-shadow:var(--rsb-shadow);
+    max-height:86vh;overflow:auto;
+  }
+  .rsb-modal__panel h3{font-size:18px;margin-bottom:8px}
+  .rsb-modal__panel p{font-size:13.5px;color:var(--rsb-txt-2);margin-bottom:14px}
+  .rsb-modal__close{position:absolute;right:14px;top:12px;background:none;border:none;color:var(--rsb-txt-3);font-size:20px}
+  .rsb-modal textarea,.rsb-modal input{
+    width:100%;background:var(--rsb-panel-2);border:1px solid var(--rsb-line);border-radius:9px;
+    color:var(--rsb-txt);padding:10px 12px;font-size:13.5px;font-family:inherit;margin-bottom:11px;outline:none;
+  }
+  .rsb-modal textarea:focus,.rsb-modal input:focus{border-color:var(--rsb-violet)}
+  .rsb-share{display:flex;gap:10px;flex-wrap:wrap;margin:6px 0 16px}
+  .rsb-share__item{background:var(--rsb-panel-2);border:1px solid var(--rsb-line);border-radius:9px;color:var(--rsb-txt);font-size:12.5px;padding:8px 15px;transition:.2s}
+  .rsb-share__item:hover{border-color:var(--rsb-gold);color:var(--rsb-gold)}
+
+  @media (max-width:1080px){
+    .rsb-hero__grid{grid-template-columns:1fr;gap:32px}
+    .rsb-cards{grid-template-columns:repeat(2,1fr)}
+    .rsb-topics{grid-template-columns:repeat(2,1fr)}
+    .rsb-creators{grid-template-columns:repeat(2,1fr)}
+    .rsb-footer__grid{grid-template-columns:1fr 1fr}
+    .rsb-focus__grid{grid-template-columns:1fr}
+  }
+  @media (max-width:820px){
+    .rsb-search{display:none}
+    .rsb-burger{display:block}
+    .rsb-nav{
+      display:none;position:absolute;left:0;right:0;top:100%;
+      background:#12161f;border-bottom:1px solid var(--rsb-line);
+      padding:12px 18px;flex-direction:column;gap:2px;box-shadow:var(--rsb-shadow);
+    }
+    .rsb-nav.is-open{display:flex}
+    .rsb-header__inner{position:relative}
+    .rsb-about__cols{grid-template-columns:1fr}
+    .rsb-wall{grid-template-columns:repeat(2,1fr)}
+    .rsb-reviews,.rsb-rank,.rsb-split,.rsb-bottom{grid-template-columns:1fr}
+    .rsb-section{padding:46px 0}
+    .rsb-hero__float{display:none}
+  }
+  @media (max-width:560px){
+    .rsb-cards,.rsb-topics,.rsb-creators{grid-template-columns:1fr}
+    .rsb-mini{grid-template-columns:104px 1fr}
+    .rsb-footer__grid{grid-template-columns:1fr}
+    .rsb-stats{gap:18px}
+    .rsb-about{padding:24px 20px}
+    .rsb-notice__list{gap:16px}
+  }
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="rsb-sticky-wrap">
+  <!-- 公告条 -->
+  <div class="rsb-notice">
+    <div class="rsb-notice__inner">
+      <span class="rsb-notice__tag">今日爆料</span>
+      <div class="rsb-notice__list">
+        <span class="rsb-notice__item">新增：<b>《都市清晨》系列第四期</b>幕后纪录已上线</span>
+        <span class="rsb-notice__item">更新：<b>爆料雷达</b>新增“夜行地图”话题合集</span>
+        <span class="rsb-notice__item">报名：<b>城市影像挑战</b>第 12 期开放投稿</span>
+      </div>
+      <a class="rsb-notice__more" href="#rsb-log">查看全部更新</a>
+    </div>
+  </div>
+
+  <!-- 页头 -->
+  <header class="rsb-header">
+    <div class="rsb-header__inner">
+      <a class="rsb-logo" href="#rsb-top" aria-label="r星今日爆料官方网站首页">
+        <span class="rsb-logo__mark" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <path d="M4 20V5l6 7 2-4 8 12H4z" fill="#ffcf3f"/>
+            <circle cx="18" cy="6" r="3" fill="#e5372c"/>
+          </svg>
+        </span>
+        <span class="rsb-logo__text">
+          <span class="rsb-logo__name">r星<em>今日爆料</em></span>
+          <span class="rsb-logo__slogan">R-STAR BURST 官方视频门户</span>
+        </span>
+      </a>
+
+      <nav class="rsb-nav" id="rsbNav" aria-label="主导航">
+        <a class="rsb-nav__link is-active" href="#rsb-top">首页</a>
+        <a class="rsb-nav__link" href="#rsb-focus">焦点内容</a>
+        <a class="rsb-nav__link" href="#rsb-videos">爆料视频</a>
+        <a class="rsb-nav__link" href="#rsb-topics">专题企划</a>
+        <a class="rsb-nav__link" href="#rsb-creators">创作者</a>
+        <a class="rsb-nav__link" href="#rsb-log">企业动态</a>
+        <a class="rsb-nav__link" href="#rsb-faq">帮助</a>
+        <a class="rsb-nav__link" href="#rsb-contact">联系</a>
+      </nav>
+
+      <div class="rsb-search">
+        <span class="rsb-search__icon" aria-hidden="true">⌕</span>
+        <input class="rsb-search__input" id="rsbSearchInput" type="search" placeholder="搜索爆料、专题、创作者" aria-label="站内搜索">
+        <div class="rsb-search__hint" id="rsbSearchHint"></div>
+      </div>
+
+      <button class="rsb-burger" id="rsbBurger" aria-label="展开导航菜单" aria-expanded="false">☰</button>
+    </div>
+  </header>
+</div>
+
+<main id="rsb-top">
+
+  <!-- 首屏 -->
+  <section class="rsb-hero">
+    <div class="rsb-container">
+      <div class="rsb-hero__grid">
+        <div>
+          <div class="rsb-hero__badges">
+            <span class="rsb-chip rsb-chip--gold">官方网站</span>
+            <span class="rsb-chip">企业级视频品牌</span>
+            <span class="rsb-chip rsb-chip--violet">持续运营 8 年</span>
+          </div>
+          <h1>r星今日爆料</h1>
+          <p class="rsb-hero__sub">每天一条真正值得点开的爆料</p>
+          <p class="rsb-hero__lead">
+            作为深耕游戏与数字生活领域的视频品牌，<b>r星今日爆料官方网站</b>以原创影像、行业观察与玩家共创为核心，
+            为创作者与企业搭建高品质内容生态，坚持正版、高清、专业的出品标准，让每一条爆料都有出处、有温度、有回响。
+          </p>
+          <div class="rsb-hero__actions">
+            <a class="rsb-btn rsb-btn--primary" href="#rsb-videos">开始浏览爆料</a>
+            <a class="rsb-btn rsb-btn--ghost" href="#rsb-creators">认识创作者</a>
+            <button class="rsb-btn rsb-btn--ghost" type="button" data-rsb-open="submit">投稿入口</button>
+          </div>
+          <div class="rsb-stats">
+            <div class="rsb-stats__item">
+              <div class="rsb-stats__num" data-rsb-count="1286">0</div>
+              <div class="rsb-stats__label">原创视频 · 条</div>
+            </div>
+            <div class="rsb-stats__item">
+              <div class="rsb-stats__num" data-rsb-count="94">0</div>
+              <div class="rsb-stats__label">签约创作者 · 位</div>
+            </div>
+            <div class="rsb-stats__item">
+              <div class="rsb-stats__num" data-rsb-count="312">0</div>
+              <div class="rsb-stats__label">专题企划 · 期</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rsb-hero__visual">
+          <div class="rsb-hero__cover">
+            <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 400'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23141a2b'/%3E%3Cstop offset='0.55' stop-color='%23253155'/%3E%3Cstop offset='1' stop-color='%230b0e18'/%3E%3C/linearGradient%3E%3ClinearGradient id='beam' x1='0' y1='0' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%23ffcf3f' stop-opacity='0.9'/%3E%3Cstop offset='1' stop-color='%23e5372c' stop-opacity='0.2'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='400' fill='url(%23bg)'/%3E%3Cg opacity='0.5'%3E%3Ccircle cx='120' cy='90' r='2' fill='%2337d6d0'/%3E%3Ccircle cx='210' cy='60' r='1.6' fill='%23ffffff'/%3E%3Ccircle cx='320' cy='120' r='2.2' fill='%23ffcf3f'/%3E%3Ccircle cx='430' cy='70' r='1.5' fill='%238a7bff'/%3E%3Ccircle cx='520' cy='140' r='2' fill='%23ffffff'/%3E%3Ccircle cx='80' cy='280' r='1.8' fill='%23ffffff'/%3E%3Ccircle cx='560' cy='300' r='2.4' fill='%2337d6d0'/%3E%3C/g%3E%3Cpath d='M0 330 L180 210 L300 300 L460 160 L640 290 L640 400 L0 400 Z' fill='%230b0e18'/%3E%3Cpath d='M0 350 L150 260 L330 340 L520 230 L640 330 L640 400 L0 400 Z' fill='%23182033'/%3E%3Crect x='60' y='40' width='150' height='6' rx='3' fill='url(%23beam)'/%3E%3Ccircle cx='480' cy='120' r='54' fill='none' stroke='%23ffcf3f' stroke-opacity='0.45' stroke-width='1.5'/%3E%3Ccircle cx='480' cy='120' r='34' fill='none' stroke='%23e5372c' stroke-opacity='0.5' stroke-width='1.5'/%3E%3Cpath d='M465 105 L505 120 L465 135 Z' fill='%23ffcf3f'/%3E%3C/svg%3E" alt="r星今日爆料品牌主视觉：夜色中的数据星图与爆料雷达">
+            <div class="rsb-hero__cover-meta">
+              <div>
+                <div class="rsb-hero__cover-title">爆料雷达 · 24 小时</div>
+                <div class="rsb-hero__cover-sub">今日已收录 18 条线索 · 持续更新</div>
+              </div>
+              <span class="rsb-chip rsb-chip--gold">官方出品</span>
+            </div>
+          </div>
+          <div class="rsb-hero__float">
+            <b>+18</b>
+            <span>今日新增爆料线索<br>来自 7 座城市的创作者</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 关键词深度解析 -->
+      <div class="rsb-about" id="rsb-about">
+        <h2 class="rsb-about__title">关于 <span>r星今日爆料</span>：一个把“爆料”做成长期主义的视频品牌</h2>
+        <p>
+          “r星今日爆料”这个关键词，表面指向的是一种即时性极强的信息形态——今天发生了什么、谁又说了什么、哪条线索值得追。
+          而在我们的理解里，真正有生命力的爆料，从来不是一次性的话题消费，而是一套<strong>可被追溯、可被验证、可被持续讨论</strong>的内容机制。
+          作为一家持续运营的视频品牌，r星今日爆料官方网站把自己定位为“游戏与数字生活领域的爆料中枢”：
+          我们不做情绪的搬运工，我们做信息的整理者、视角的提供者与社区的组织者。
+        </p>
+        <p>
+          所谓“r星”，是我们对内容形态的一个比喻——每一颗星都代表一个独立的爆料源，它们散落在玩家的聊天记录里、开发者的只言片语里、城市角落的一场线下活动里。
+          我们的工作，是用影像把这些散落的星点连成星座：一条爆料背后要有素材、有出处、有交叉印证，也要有当事人的表情、语气与场景。
+          因此，<strong>官方网站</strong>上的每一条内容都遵循统一的出品标准：高清画质、专业剪辑、原创叙事、正版素材，并在片尾明确标注信息来源与更新时间。
+          这不是对“快”的妥协，而是对“值得信赖”这四个字的长期投资。
+        </p>
+        <p>
+          今天的 r星今日爆料，已经从一个三人小组成长为一个由创作者、剪辑师、行业观察者与社区运营者共同构成的内容生态。
+          我们设有“爆料雷达”日常栏目，负责对当日线索做快速筛选与解读；设有“深度追踪”专题，对重要事件做 3 至 5 期的连续纪录；
+          也设有“创作者开放计划”，让每一位愿意认真讲故事的玩家，都能通过投稿与共创进入官方发布序列。
+          我们相信，<strong>口碑</strong>不是投票投出来的，而是一条一条内容累积出来的；<strong>影响力</strong>也不是流量堆出来的，而是一次次负责任的信息核对换来的。
+        </p>
+        <p>
+          如果你第一次来到这里，可以把它看成一档每天都在更新的视频栏目；如果你是老观众，你会知道我们很少追逐最热的那条，
+          但常常在三天之后给出最完整的那一期。这就是 r星今日爆料官方网站想要坚持的事：
+          以<strong>匠心</strong>对待每一条线索，以<strong>包容</strong>对待每一种声音，以<strong>真实</strong>作为底线，以<strong>陪伴</strong>作为长期承诺。
+          无论你是开发者、发行从业者、内容创作者，还是只想在下班后看看今天又有什么新动静的普通玩家，
+          这里都为你留了一个位置。
+        </p>
+        <div class="rsb-about__cols">
+          <div class="rsb-about__card">
+            <h4>我们在做什么</h4>
+            <p>每日爆料速览、深度追踪专题、创作者访谈、行业观察与线下活动纪录，构成 r星今日爆料的五条内容主线。</p>
+          </div>
+          <div class="rsb-about__card">
+            <h4>我们如何做</h4>
+            <p>线索收集 → 交叉核对 → 影像化表达 → 社区讨论 → 复盘归档，五步流程保证内容品质与信息可追溯。</p>
+          </div>
+          <div class="rsb-about__card">
+            <h4>谁在和我们一起</h4>
+            <p>94 位签约创作者、12 家长期合作品牌、以及每天在评论区留下线索的数千位社区成员。</p>
+          </div>
+          <div class="rsb-about__card">
+            <h4>我们坚持什么</h4>
+            <p>原创、正版、高清、专业。不炒作未证实信息，不消费当事人隐私，不制造对立情绪。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 焦点内容 -->
+  <section class="rsb-section" id="rsb-focus">
+    <div class="rsb-container">
+      <div class="rsb-section__head">
+        <div>
+          <span class="rsb-eyebrow">Focus · 今日焦点</span>
+          <h2 class="rsb-h2">今天最值得看的 <em>三条爆料</em></h2>
+          <p class="rsb-section__desc">编辑部从今日 18 条线索中筛出三条，均已交叉核对至少两个独立来源。</p>
+        </div>
+        <button class="rsb-btn rsb-btn--ghost" type="button" data-rsb-open="share">分享本页</button>
+      </div>
+
+      <div class="rsb-focus__grid">
+        <article class="rsb-focus__main">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 720 420'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231c2340'/%3E%3Cstop offset='1' stop-color='%230a0d15'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='720' height='420' fill='url(%23a)'/%3E%3Cg stroke='%2337d6d0' stroke-opacity='0.35'%3E%3Cpath d='M40 340 L200 190 L320 260 L470 120 L680 260' fill='none' stroke-width='2'/%3E%3C/g%3E%3Cg fill='%23ffcf3f'%3E%3Ccircle cx='200' cy='190' r='5'/%3E%3Ccircle cx='320' cy='260' r='4'/%3E%3Ccircle cx='470' cy='120' r='6'/%3E%3C/g%3E%3Crect x='60' y='60' width='220' height='12' rx='6' fill='%23e5372c' opacity='0.85'/%3E%3Crect x='60' y='88' width='140' height='8' rx='4' fill='%23ffffff' opacity='0.25'/%3E%3Cg opacity='0.6'%3E%3Crect x='520' y='300' width='140' height='70' rx='8' fill='none' stroke='%238a7bff' stroke-width='1.5'/%3E%3Cpath d='M545 335 h90 M545 350 h60' stroke='%238a7bff' stroke-width='2'/%3E%3C/g%3E%3C/svg%3E" alt="爆料雷达今日头条：某工作室新项目线索的三方交叉核对">
+          <div class="rsb-focus__main-body">
+            <span class="rsb-focus__tag">深度追踪</span>
+            <h3>三方信源交叉核对：那条被反复删除又出现的项目线索</h3>
+            <p>从凌晨的一条动态，到中午的三个独立爆料，我们用 14 小时梳理了这条线索的时间线、矛盾点与可信度评分。附完整核对表。</p>
+            <div class="rsb-author" style="margin-top:14px">
+              <span class="rsb-avatar" style="background:#37d6d0">雷</span>
+              <span>爆料雷达编辑部 · 11-19 18:40 更新</span>
+            </div>
+          </div>
+        </article>
+
+        <div class="rsb-focus__list">
+          <article class="rsb-mini">
+            <div class="rsb-mini__thumb">
+              <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%23161a2a'/%3E%3Ccircle cx='250' cy='60' r='70' fill='%23e5372c' opacity='0.28'/%3E%3Ccircle cx='250' cy='60' r='44' fill='none' stroke='%23ffcf3f' stroke-width='2'/%3E%3Crect x='28' y='120' width='120' height='10' rx='5' fill='%23ffffff' opacity='0.5'/%3E%3Crect x='28' y='142' width='80' height='8' rx='4' fill='%2337d6d0' opacity='0.7'/%3E%3Cpath d='M28 60 l50 40 -50 40z' fill='%23ffcf3f' opacity='0.85'/%3E%3C/svg%3E" alt="城际线下试玩会现场的第一手影像记录">
+              <span class="rsb-mini__play" aria-hidden="true">▶</span>
+            </div>
+            <div class="rsb-mini__body">
+              <h3>城际试玩会现场：我们拍到了那些人没说出口的表情</h3>
+              <span>现场纪录 · 12:06</span>
+            </div>
+          </article>
+          <article class="rsb-mini">
+            <div class="rsb-mini__thumb">
+              <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%230f1421'/%3E%3Cg stroke='%2337d6d0' stroke-width='1.6' opacity='0.7'%3E%3Cpath d='M20 160 H300'/%3E%3Cpath d='M20 120 H250'/%3E%3Cpath d='M20 80 H200'/%3E%3C/g%3E%3Crect x='150' y='30' width='120' height='90' rx='8' fill='%23253155'/%3E%3Ccircle cx='210' cy='75' r='24' fill='none' stroke='%238a7bff' stroke-width='2'/%3E%3Cpath d='M200 65 l22 10 -22 10z' fill='%238a7bff'/%3E%3Crect x='150' y='140' width='90' height='8' rx='4' fill='%23ffcf3f' opacity='0.6'/%3E%3C/svg%3E" alt="创作者访谈：从玩家到爆料整理者的三年">
+              <span class="rsb-mini__play" aria-hidden="true">▶</span>
+            </div>
+            <div class="rsb-mini__body">
+              <h3>人物访谈：从玩家到爆料整理者，他如何守住“不造谣”这条线</h3>
+              <span>人物访谈 · 18:22</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 视频流 -->
+  <section class="rsb-section rsb-section--tight" id="rsb-videos">
+    <div class="rsb-container">
+      <div class="rsb-section__head">
+        <div>
+          <span class="rsb-eyebrow">Burst Feed · 爆料视频</span>
+          <h2 class="rsb-h2">正在被讨论的 <em>九个现场</em></h2>
+          <p class="rsb-section__desc">点击标签可筛选分类；点赞、收藏状态在本页即时生效。</p>
+        </div>
+      </div>
+
+      <div class="rsb-toolbar" id="rsbFilterBar">
+        <button class="rsb-filter is-on" type="button" data-rsb-filter="all">全部</button>
+        <button class="rsb-filter" type="button" data-rsb-filter="线索">线索速览</button>
+        <button class="rsb-filter" type="button" data-rsb-filter="现场">线下现场</button>
+        <button class="rsb-filter" type="button" data-rsb-filter="访谈">人物访谈</button>
+        <button class="rsb-filter" type="button" data-rsb-filter="幕后">创作幕后</button>
+      </div>
+
+      <div class="rsb-cards" id="rsbCardGrid">
+
+        <article class="rsb-card" data-rsb-cat="线索">
+          <div class="rsb-card__cover">
+            <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Cdefs%3E%3ClinearGradient id='c1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23232a45'/%3E%3Cstop offset='1' stop-color='%230b0f18'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='225' fill='url(%23c1)'/%3E%3Cg fill='none' stroke='%23ffcf3f' stroke-width='1.5' opacity='0.65'%3E%3Ccircle cx='310' cy='60' r='38'/%3E%3Ccircle cx='310' cy='60' r='22'/%3E%3Cpath d='M310 22 v18 M310 80 v18 M272 60 h18 M330 60 h18'/%3E%3C/g%3E%3Ctext x='30' y='120' fill='%23ffcf3f' font-family='monospace' font-size='30' opacity='0.9'%3E%3F%3F%3F%3C/text%3E%3Crect x='30' y='140' width='150' height='8' rx='4' fill='%23ffffff' opacity='0.3'/%3E%3Crect x='30' y='160' width='100' height='8' rx='4' fill='%2337d6d0' opacity='0.6'/%3E%3C/svg%3E" alt="凌晨三点的删除动态：一条线索的完整时间线">
+            <span class="rsb-card__cat">线索速览</span>
+            <span class="rsb-card__duration">09:48</span>
+          </div>
+          <div class="rsb-card__body">
+            <h3>凌晨三点的删除动态：一条线索的完整时间线</h3>
+            <p class="rsb-card__excerpt">从发布到删除的 47 分钟里，究竟发生了什么？我们用截图、缓存与三方信源还原全过程。</p>
+            <div class="rsb-card__tags">
+              <span class="rsb-card__tag">时间线</span><span class="rsb-card__tag">交叉核对</span>
+            </div>
+            <div class="rsb-card__foot">
+              <span class="rsb-author"><span class="rsb-avatar" style="background:#ffcf3f">雷</span>爆料雷达</span>
+              <div class="rsb-ops">
+                <button class="rsb-op" type="button" data-rsb-like="3120">♥ <b>3120</b></button>
+                <button class="rsb-op" type="button" data-rsb-save="1">☆ 收藏</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="rsb-card" data-rsb-cat="现场">
+          <div class="rsb-card__cover">
+            <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%23101420'/%3E%3Crect y='150' width='400' height='75' fill='%231b2033'/%3E%3Cg fill='%2337d6d0' opacity='0.8'%3E%3Crect x='36' y='120' width='12' height='30' rx='3'/%3E%3Crect x='60' y='110' width='12' height='40' rx='3'/%3E%3Crect x='84' y='128' width='12' height='22' rx='3'/%3E%3C/g%3E%3Ccircle cx='280' cy='80' r='46' fill='none' stroke='%23e5372c' stroke-width='2' opacity='0.7'/%3E%3Cpath d='M266 62 L302 80 L266 98z' fill='%23e5372c'/%3E%3Crect x='210' y='150' width='150' height='10' rx='5' fill='%23ffcf3f' opacity='0.5'/%3E%3Crect x='210' y='172' width='100' height='8' rx='4' fill='%23ffffff' opacity='0.25'/%3E%3C/svg%3E" alt="线下试玩会现场：排队两小时的第一手体验记录">
+            <span class="rsb-card__cat">线下现场</span>
+            <span class="rsb-card__duration">14:12</span>
+          </div>
+          <div class="rsb-card__body">
+            <h3>线下试玩会现场：排队两小时的第一手体验记录</h3>
+            <p class="rsb-card__excerpt">我们跟着三位普通玩家走完全程，记录他们进入、犹豫、惊叹与离开时的每一句话。</p>
+            <div class="rsb-card__tags">
+              <span class="rsb-card__tag">现场纪录</span><span class="rsb-card__tag">玩家反馈</span>
+            </div>
+            <div class="rsb-card__foot">
+              <span class="rsb-author"><span class="rsb-avatar" style="background:#37d6d0">橙</span>城际观察组</span>
+              <div class="rsb-ops">
+                <button class="rsb-op" type="button" data-rsb-like="2486">♥ <b>2486</b></button>
+                <button class="rsb-op" type="button" data-rsb-save="2">☆ 收藏</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="rsb-card" data-rsb-cat="访谈">
+          <div class="rsb-card__cover">
+            <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%231d1a2e'/%3E%3Ccircle cx='120' cy='112' r='52' fill='%238a7bff' opacity='0.35'/%3E%3Ccircle cx='120' cy='96' r='20' fill='%23c9bfff'/%3E%3Cpath d='M84 160 a36 36 0 0 1 72 0z' fill='%23c9bfff'/%3E%3Crect x='210' y='70' width='140' height='9' rx='4' fill='%23ffffff' opacity='0.5'/%3E%3Crect x='210' y='94' width='110' height='9' rx='4' fill='%23ffffff' opacity='0.3'/%3E%3Crect x='210' y='118' width='130' height='9' rx='4' fill='%23ffcf3f' opacity='0.6'/%3E%3Crect x='210' y='150' width='80' height='26' rx='13' fill='none' stroke='%2337d6d0' stroke-width='1.5'/%3E%3C/svg%3E" alt="人物访谈：整理爆料三年，他最难的一课是克制">
+            <span class="rsb-card__cat">人物访谈</span>
+            <span class="rsb-card__duration">21:35</span>
+          </div>
+          <div class="rsb-card__body">
+            <h3>整理爆料三年，他最难的一课是“克制”</h3>
+            <p class="rsb-card__excerpt">与签约创作者“老秦”对谈：如何判断一条线索值得发，如何在热度与准确之间做选择。</p>
+            <div class="rsb-card__tags">
+              <span class="rsb-card__tag">创作者</span><span class="rsb-card__tag">行业观察</span>
+            </div>
+            <div class="rsb-card__foot">
+              <span class="rsb-author"><span class="rsb-avatar" style="background:#8a7bff">访</span>访谈组</span>
+              <div class="rsb-ops">
+                <button class="rsb-op" type="button" data-rsb-like="1974">♥ <b>1974</b></button>
+                <button class="rsb-op" type="button" data-rsb-save="3">☆ 收藏</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="rsb-card" data-rsb-cat="幕后">
+          <div class="rsb-card__cover">
+            <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%2311181a'/%3E%3Cg stroke='%2337d6d0' stroke-width='1.4' opacity='0.55'%3E%3Cpath d='M0 40 H160 V90 H260 V140 H400' fill='none'/%3E%3Cpath d='M40 0 V60 M100 0 V90'/%3E%3C/g%3E%3Crect x='180' y='90' width='120' height='80' rx='8' fill='%231b2a2e' stroke='%2337d6d0' stroke-width='1.5'/%3E%3Crect x='196' y='108' width='88' height='8' rx='4' fill='%2337d6d0' opacity='0.7'/%3E%3Crect x='196' y='126' width='60' height='8' rx='4' fill='%23ffcf3f' opacity='0.6'/%3E%3Ccircle cx='330' cy='170' r='26' fill='none' stroke='%23ffcf3f' stroke-width='2'/%3E%3C/svg%3E" alt="一期爆料视频的诞生：从选题会到成片归档">
+            <span class="rsb-card__cat">创作幕后</span>
+            <span class="rsb-card__duration">11:03</span>
+          </div>
+          <div class="rsb-card__body">
+            <h3>一期爆料视频的诞生：从选题会到成片归档</h3>
+            <p class="rsb-card__excerpt">镜头之外的 30 小时：选题会争论、素材授权、字幕校对与最终信息复核。</p>
+            <div class="rsb-card__tags">
+              <span class="rsb-card__tag">幕后</span><span class="rsb-card__tag">流程</span>
+            </div>
+            <div class="rsb-card__foot">
+              <span class="rsb-author"><span class="rsb-avatar" style="background:#e5372c">剪</span>后期组</span>
+              <div class="rsb-ops">
+                <button class="rsb-op" type="button" data-rsb-like="1436">♥ <b>1436</b></button>
+                <button class="rsb-op" type="button" data-rsb-save="4">☆ 收藏</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="rsb-card" data-rsb-cat="线索">
+          <div class="rsb-card__cover">
+            <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%230d1119'/%3E%3Cg stroke='%23ffcf3f' stroke-opacity='0.5' stroke-width='1.2'%3E%3Cpath d='M0 190 L70 150 L140 176 L210 120 L280 160 L350 104 L400 140'/%3E%3C/g%3E%3Crect x='40' y='44' width='190' height='60' rx='6' fill='%23202637' stroke='%2337d6d0' stroke-width='1.2'/%3E%3Crect x='56' y='60' width='120' height='7' rx='3' fill='%2337d6d0' opacity='0.8'/%3E%3Crect x='56' y='76' width='80' height='7' rx='3' fill='%23ffffff' opacity='0.35'/%3E%3Ccircle cx='330' cy='60' r='20' fill='%23e5372c' opacity='0.85'/%3E%3Ctext x='322' y='67' fill='%23fff' font-size='18' font-family='monospace'%3E!%3C/text%3E%3C/svg%3E" alt="被过度解读的三条细节：我们逐条标注了可信度">
+            <span class="rsb-card__cat">线索速览</span>
+            <span class="rsb-card__duration">08:26</span>
+          </div>
+          <div class="rsb-card__body">
+            <h3>被过度解读的三条细节：我们逐条标注了可信度</h3>
+            <p class="rsb-card__excerpt">同一张图被读出三套结论。我们把每个“证据”的可信度分级，并说明判断依据。</p>
+            <div class="rsb-card__tags">
+              <span class="rsb-card__tag">可信度</span><span class="rsb-card__tag">辟谣</span>
+            </div>
+            <div class="rsb-card__foot">
+              <span class="rsb-author"><span class="rsb-avatar" style="background:#ffcf3f">核</span>核对组</span>
+              <div class="rsb-ops">
+                <button class="rsb-op" type="button" data-rsb-like="2761">♥ <b>2761</b></button>
+                <button class="rsb-op" type="button" data-rsb-save="5">☆ 收藏</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="rsb-card" data-rsb-cat="现场">
+          <div class="rsb-card__cover">
+            <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%231a1520'/%3E%3Crect y='170' width='400' height='55' fill='%23231c2b'/%3E%3Cg fill='%23ffcf3f' opacity='0.85'%3E%3Ccircle cx='70' cy='60' r='4'/%3E%3Ccircle cx='120' cy='40' r='3'/%3E%3Ccircle cx='160' cy='80' r='4'/%3E%3C/g%3E%3Cpath d='M200 170 V90 l40 -30 40 30 v80z' fill='%232d2740' stroke='%238a7bff' stroke-width='1.5'/%3E%3Cpath d='M218 170 v-40 h24 v40z' fill='%238a7bff' opacity='0.6'/%3E%3Ccircle cx='300' cy='120' r='34' fill='%23e5372c' opacity='0.28'/%3E%3C/svg%3E" alt="夜行地图：一场城市爆料采集行动的夜间记录">
+            <span class="rsb-card__cat">线下现场</span>
+            <span class="rsb-card__duration">17:44</span>
+          </div>
+          <div class="rsb-card__body">
+            <h3>夜行地图：一场城市爆料采集行动的夜间记录</h3>
+            <p class="rsb-card__excerpt">我们带着相机走了 9 公里，记录 4 个线下据点、2 场小型交流与 1 次意外相遇。</p>
+            <div class="rsb-card__tags">
+              <span class="rsb-card__tag">城市探索</span><span class="rsb-card__tag">社区</span>
+            </div>
+            <div class="rsb-card__foot">
+              <span class="rsb-author"><span class="rsb-avatar" style="background:#37d6d0">夜</span>城际观察组</span>
+              <div class="rsb-ops">
+                <button class="rsb-op" type="button" data-rsb-like="1189">♥ <b>1189</b></button>
+                <button class="rsb-op" type="button" data-rsb-save="6">☆ 收藏</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="rsb-card" data-rsb-cat="访谈">
+          <div class="rsb-card__cover">
+            <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%23131b2b'/%3E%3Crect x='30' y='40' width='150' height='130' rx='10' fill='%23243050'/%3E%3Ccircle cx='105' cy='86' r='22' fill='%2337d6d0'/%3E%3Cpath d='M75 150 a30 30 0 0 1 60 0z' fill='%2337d6d0'/%3E%3Crect x='210' y='60' width='150' height='8' rx='4' fill='%23ffffff' opacity='0.45'/%3E%3Crect x='210' y='84' width='120' height='8' rx='4' fill='%23ffffff' opacity='0.28'/%3E%3Crect x='210' y='108' width='140' height='8' rx='4' fill='%23ffcf3f' opacity='0.6'/%3E%3Crect x='210' y='140' width='70' height='24' rx='12' fill='none' stroke='%23e5372c' stroke-width='1.5'/%3E%3C/svg%3E" alt="女性创作者的镜头语言：三位剪辑师的对谈">
+            <span class="rsb-card__cat">人物访谈</span>
+            <span class="rsb-card__duration">19:08</span>
+          </div>
+          <div class="rsb-card__body">
+            <h3>女性创作者的镜头语言：三位剪辑师的对谈</h3>
+            <p class="rsb-card__excerpt">她们如何看待“爆料感”的视觉表达？节奏、留白与情绪，是三种不同的答案。</p>
+            <div class="rsb-card__tags">
+              <span class="rsb-card__tag">剪辑</span><span class="rsb-card__tag">表达</span>
+            </div>
+            <div class="rsb-card__foot">
+              <span class="rsb-author"><span class="rsb-avatar" style="background:#c9bfff">摄</span>访谈组</span>
+              <div class="rsb-ops">
+                <button class="rsb-op" type="button" data-rsb-like="1650">♥ <b>1650</b></button>
+                <button class="rsb-op" type="button" data-rsb-save="7">☆ 收藏</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="rsb-card" data-rsb-cat="幕后">
+          <div class="rsb-card__cover">
+            <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%230f1318'/%3E%3Cg stroke='%23ffcf3f' stroke-opacity='0.4' stroke-width='1.2'%3E%3Cpath d='M20 200 L120 120 L200 160 L300 80 L380 130'/%3E%3C/g%3E%3Crect x='60' y='50' width='100' height='70' rx='6' fill='%231b2229' stroke='%2337d6d0' stroke-width='1.2'/%3E%3Crect x='76' y='66' width='68' height='6' rx='3' fill='%2337d6d0' opacity='0.8'/%3E%3Crect x='76' y='82' width='44' height='6' rx='3' fill='%23ffffff' opacity='0.3'/%3E%3Crect x='230' y='56' width='120' height='60' rx='6' fill='%231b2229' stroke='%238a7bff' stroke-width='1.2'/%3E%3Ccircle cx='290' cy='86' r='14' fill='%238a7bff' opacity='0.7'/%3E%3C/svg%3E" alt="音效设计实录：如何让一条爆料视频更有现场感">
+            <span class="rsb-card__cat">创作幕后</span>
+            <span class="rsb-card__duration">13:19</span>
+          </div>
+          <div class="rsb-card__body">
+            <h3>音效设计实录：如何让一条爆料视频更有现场感</h3>
+            <p class="rsb-card__excerpt">从环境底噪到键盘敲击，声音如何影响观众对信息真实性的判断。</p>
+            <div class="rsb-card__tags">
+              <span class="rsb-card__tag">声音</span><span class="rsb-card__tag">技巧</span>
+            </div>
+            <div class="rsb-card__foot">
+              <span class="rsb-author"><span class="rsb-avatar" style="background:#ffcf3f">音</span>后期组</span>
+              <div class="rsb-ops">
+                <button class="rsb-op" type="button" data-rsb-like="986">♥ <b>986</b></button>
+                <button class="rsb-op" type="button" data-rsb-save="8">☆ 收藏</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="rsb-card" data-rsb-cat="线索">
+          <div class="rsb-card__cover">
+            <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%23101620'/%3E%3Cg fill='%23e5372c' opacity='0.9'%3E%3Crect x='40' y='46' width='6' height='120' rx='3'/%3E%3C/g%3E%3Crect x='60' y='50' width='160' height='9' rx='4' fill='%23ffffff' opacity='0.5'/%3E%3Crect x='60' y='74' width='120' height='9' rx='4' fill='%23ffffff' opacity='0.3'/%3E%3Crect x='60' y='98' width='140' height='9' rx='4' fill='%23ffcf3f' opacity='0.6'/%3E%3Cg stroke='%2337d6d0' stroke-width='1.5' opacity='0.7'%3E%3Crect x='250' y='80' width='110' height='80' rx='8' fill='none'/%3E%3Cpath d='M270 160 L270 120 L290 100 L310 120 L310 160'/%3E%3C/g%3E%3C/svg%3E" alt="一周爆料复盘：五条被证伪、三条仍在追踪">
+            <span class="rsb-card__cat">线索速览</span>
+            <span class="rsb-card__duration">10:52</span>
+          </div>
+          <div class="rsb-card__body">
+            <h3>一周爆料复盘：五条被证伪、三条仍在追踪</h3>
+            <p class="rsb-card__excerpt">我们把这一周所有线索做了一次公开复盘，包括那些我们判断错误的。</p>
+            <div class="rsb-card__tags">
+              <span class="rsb-card__tag">复盘</span><span class="rsb-card__tag">公开</span>
+            </div>
+            <div class="rsb-card__foot">
+              <span class="rsb-author"><span class="rsb-avatar" style="background:#37d6d0">周</span>核对组</span>
+              <div class="rsb-ops">
+                <button class="rsb-op" type="button" data-rsb-like="2205">♥ <b>2205</b></button>
+                <button class="rsb-op" type="button" data-rsb-save="9">☆ 收藏</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 专题-->
+  <section class="rsb-section" id="rsb-topics">
+    <div class="rsb-container">
+      <div class="rsb-section__head">
+        <div>
+          <span class="rsb-eyebrow">Series · 专题企划</span>
+          <h2 class="rsb-h2">四个正在更新的 <em>长期专题</em></h2>
+          <p class="rsb-section__desc">专题不是合集，而是有明确问题意识的连续纪录。每个专题保持固定的更新节奏与核对标准。</p>
+        </div>
+      </div>
+
+      <div class="rsb-topics">
+        <article class="rsb-topic">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 260'%3E%3Crect width='320' height='260' fill='%2314202a'/%3E%3Cg stroke='%2337d6d0' stroke-width='1.4' fill='none' opacity='0.7'%3E%3Ccircle cx='160' cy='110' r='60'/%3E%3Ccircle cx='160' cy='110' r='36'/%3E%3Cpath d='M160 42 v20 M160 158 v20 M92 110 h20 M208 110 h20'/%3E%3C/g%3E%3Ccircle cx='160' cy='110' r='8' fill='%23ffcf3f'/%3E%3Cpath d='M120 200 h80' stroke='%23e5372c' stroke-width='4'/%3E%3C/svg%3E" alt="专题封面：爆料雷达的二十四小时">
+          <span class="rsb-topic__status">更新至 46 期</span>
+          <h3>爆料雷达 24H</h3>
+          <p>每天一集，记录当日最值得关注的三条线索与核对过程。</p>
+        </article>
+        <article class="rsb-topic">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 260'%3E%3Crect width='320' height='260' fill='%23201a2e'/%3E%3Cpath d='M40 210 L110 120 L170 170 L240 80 L290 130' fill='none' stroke='%238a7bff' stroke-width='2.4'/%3E%3Ccircle cx='110' cy='120' r='6' fill='%23ffcf3f'/%3E%3Ccircle cx='240' cy='80' r='6' fill='%23ffcf3f'/%3E%3Crect x='40' y='40' width='100' height='8' rx='4' fill='%23ffffff' opacity='0.35'/%3E%3Crect x='40' y='60' width='60' height='8' rx='4' fill='%238a7bff' opacity='0.6'/%3E%3C/svg%3E" alt="专题封面：被证伪的爆料档案">
+          <span class="rsb-topic__status">更新至 18 期</span>
+          <h3>被证伪的爆料档案</h3>
+          <p>专门收集我们判断失误的案例，公开错误，也公开修正过程。</p>
+        </article>
+        <article class="rsb-topic">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 260'%3E%3Crect width='320' height='260' fill='%23131a22'/%3E%3Crect x='30' y='120' width='40' height='90' fill='%23e5372c' opacity='0.75'/%3E%3Crect x='86' y='90' width='40' height='120' fill='%23ffcf3f' opacity='0.75'/%3E%3Crect x='142' y='140' width='40' height='70' fill='%2337d6d0' opacity='0.75'/%3E%3Crect x='198' y='70' width='40' height='140' fill='%238a7bff' opacity='0.75'/%3E%3Crect x='254' y='110' width='40' height='100' fill='%23ffffff' opacity='0.35'/%3E%3Cpath d='M30 40 h240' stroke='%23ffffff' stroke-opacity='0.3' stroke-width='2'/%3E%3C/svg%3E" alt="专题封面：城市创作者生存报告">
+          <span class="rsb-topic__status">更新至 12 期</span>
+          <h3>城市创作者生存报告</h3>
+          <p>走进七座城市，记录内容创作者的日常成本、收入结构与真实状态。</p>
+        </article>
+        <article class="rsb-topic">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 260'%3E%3Crect width='320' height='260' fill='%23161b16'/%3E%3Cg fill='%2337d6d0' opacity='0.55'%3E%3Ccircle cx='70' cy='70' r='20'/%3E%3Ccircle cx='130' cy='50' r='14'/%3E%3Ccircle cx='190' cy='80' r='18'/%3E%3C/g%3E%3Cpath d='M0 200 Q80 140 160 190 T320 170 V260 H0z' fill='%231e2a22'/%3E%3Cpath d='M40 190 h90' stroke='%23ffcf3f' stroke-width='3'/%3E%3Cpath d='M40 206 h50' stroke='%23ffffff' stroke-opacity='0.4' stroke-width='3'/%3E%3C/svg%3E" alt="专题封面：社区共创计划第二季">
+          <span class="rsb-topic__status">报名进行中</span>
+          <h3>社区共创计划 · 第二季</h3>
+          <p>向所有社区成员开放选题，入选线索由官方团队陪你一起完成拍摄。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 创作者 -->
+  <section class="rsb-section rsb-section--tight" id="rsb-creators">
+    <div class="rsb-container">
+      <div class="rsb-section__head">
+        <div>
+          <span class="rsb-eyebrow">Creators · 创作者矩阵</span>
+          <h2 class="rsb-h2">与 r星今日爆料同行的 <em>创作者</em></h2>
+          <p class="rsb-section__desc">以下为长期签约创作者，点击“查看档案”可展开简介与代表作品。</p>
+        </div>
+        <button class="rsb-btn rsb-btn--ghost" type="button" data-rsb-open="submit">申请成为创作者</button>
+      </div>
+
+      <div class="rsb-creators">
+        <article class="rsb-creator">
+          <div class="rsb-creator__top">
+            <span class="rsb-creator__avatar" style="background:#ffcf3f">秦</span>
+            <div>
+              <div class="rsb-creator__name">老秦说线索</div>
+              <div class="rsb-creator__field">线索核对 · 行业观察</div>
+            </div>
+          </div>
+          <p class="rsb-creator__bio">前游戏媒体编辑，擅长把碎片化的信息拼成完整时间线，口头禅是“先别急，再等等”。</p>
+          <div class="rsb-creator__meta">
+            <span><b>142</b>作品</span><span><b>18.6万</b>关注</span>
+          </div>
+          <button class="rsb-creator__more" type="button" data-rsb-author="老秦说线索|前游戏媒体编辑，深耕线索核对与行业观察。代表作品《凌晨三点的删除动态》《被过度解读的三条细节》。每周三更新“线索核对课”，累计发布 142 期原创视频。">查看档案 →</button>
+        </article>
+
+        <article class="rsb-creator">
+          <div class="rsb-creator__top">
+            <span class="rsb-creator__avatar" style="background:#37d6d0">橙</span>
+            <div>
+              <div class="rsb-creator__name">橙子现场</div>
+              <div class="rsb-creator__field">线下现场 · 城市探索</div>
+            </div>
+          </div>
+          <p class="rsb-creator__bio">常驻两座城市，带着相机跑遍试玩会与交流会，擅长捕捉人群里最真实的表情。</p>
+          <div class="rsb-creator__meta">
+            <span><b>96</b>作品</span><span><b>11.2万</b>关注</span>
+          </div>
+          <button class="rsb-creator__more" type="button" data-rsb-author="橙子现场|线下现场纪录者，关注城市与人群的细节。代表作品《线下试玩会现场》《夜行地图》。坚持所有现场拍摄均取得当事人同意。">查看档案 →</button>
+        </article>
+
+        <article class="rsb-creator">
+          <div class="rsb-creator__top">
+            <span class="rsb-creator__avatar" style="background:#8a7bff">阿</span>
+            <div>
+              <div class="rsb-creator__name">阿岚访谈录</div>
+              <div class="rsb-creator__field">人物访谈 · 文化观察</div>
+            </div>
+          </div>
+          <p class="rsb-creator__bio">做了七年人物访谈，相信“克制”是采访最重要的能力，提问永远比回答更难。</p>
+          <div class="rsb-creator__meta">
+            <span><b>74</b>作品</span><span><b>9.8万</b>关注</span>
+          </div>
+          <button class="rsb-creator__more" type="button" data-rsb-author="阿岚访谈录|人物访谈创作者，关注创作者群体的真实处境。代表作品《整理爆料三年，他最难的一课是克制》《女性创作者的镜头语言》。">查看档案 →</button>
+        </article>
+
+        <article class="rsb-creator">
+          <div class="rsb-creator__top">
+            <span class="rsb-creator__avatar" style="background:#e5372c">剪</span>
+            <div>
+              <div class="rsb-creator__name">剪辑工坊 Atelier</div>
+              <div class="rsb-creator__field">创作幕后 · 技术分享</div>
+            </div>
+          </div>
+          <p class="rsb-creator__bio">后期团队集体账号，分享素材管理、音效设计与叙事节奏，偏爱把方法论讲得具体一点。</p>
+          <div class="rsb-creator__meta">
+            <span><b>58</b>作品</span><span><b>7.4万</b>关注</span>
+          </div>
+          <button class="rsb-creator__more" type="button" data-rsb-author="剪辑工坊 Atelier|后期制作团队账号，专注创作幕后与技术分享。代表作品《一期爆料视频的诞生》《音效设计实录》。每月发布开放式素材模板。">查看档案 →</button>
+        </article>
+
+        <article class="rsb-creator">
+          <div class="rsb-creator__top">
+            <span class="rsb-creator__avatar" style="background:#c9bfff">小</span>
+            <div>
+              <div class="rsb-creator__name">小满在等更新</div>
+              <div class="rsb-creator__field">玩家视角 · 日常记录</div>
+            </div>
+          </div>
+          <p class="rsb-creator__bio">普通玩家，记录等待更新的日子里那些细小的快乐，被评论区称为“最会写弹幕的人”。</p>
+          <div class="rsb-creator__meta">
+            <span><b>63</b>作品</span><span><b>6.1万</b>关注</span>
+          </div>
+          <button class="rsb-creator__more" type="button" data-rsb-author="小满在等更新|玩家视角的日常记录者，擅长从普通玩家的角度讲述等待与惊喜。代表作品《等待更新的一百天》《我的第一台掌机》。">查看档案 →</button>
+        </article>
+
+        <article class="rsb-creator">
+          <div class="rsb-creator__top">
+            <span class="rsb-creator__avatar" style="background:#ffcf3f">档</span>
+            <div>
+              <div class="rsb-creator__name">档案室 1999</div>
+              <div class="rsb-creator__field">文化整理 · 资料归档</div>
+            </div>
+          </div>
+          <p class="rsb-creator__bio">收集旧杂志、旧海报与旧开发者日志，把被遗忘的资料整理成可检索的影像档案。</p>
+          <div class="rsb-creator__meta">
+            <span><b>110</b>作品</span><span><b>13.5万</b>关注</span>
+          </div>
+          <button class="rsb-creator__more" type="button" data-rsb-author="档案室 1999|专注旧资料整理与影像归档，长期更新“档案室计划”系列。所有资料均标注来源与收藏机构，欢迎提供线索。">查看档案 →</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 作品墙 -->
+  <section class="rsb-section" id="rsb-wall">
+    <div class="rsb-container">
+      <div class="rsb-section__head">
+        <div>
+          <span class="rsb-eyebrow">Gallery · 影像墙</span>
+          <h2 class="rsb-h2">社区上传的 <em>九个瞬间</em></h2>
+          <p class="rsb-section__desc">以下为本月社区投稿入选影像，均已获得作者授权并在官网展示。</p>
+        </div>
+      </div>
+
+      <div class="rsb-wall">
+        <figure class="rsb-wall__item rsb-wall__item--big">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 400'%3E%3Crect width='640' height='400' fill='%23141a2a'/%3E%3Ccircle cx='500' cy='110' r='70' fill='%23ffcf3f' opacity='0.18'/%3E%3Cg fill='%2337d6d0' opacity='0.85'%3E%3Crect x='60' y='250' width='16' height='90' rx='4'/%3E%3Crect x='90' y='220' width='16' height='120' rx='4'/%3E%3Crect x='120' y='270' width='16' height='70' rx='4'/%3E%3C/g%3E%3Cpath d='M200 320 L280 180 L360 250 L450 140 L560 250' fill='none' stroke='%23e5372c' stroke-width='3'/%3E%3Ccircle cx='450' cy='140' r='8' fill='%23e5372c'/%3E%3Crect x='60' y='60' width='180' height='12' rx='6' fill='%23ffffff' opacity='0.4'/%3E%3C/svg%3E" alt="社区影像：夜色中的数据观测站">
+          <figcaption>@观测者小林 · 夜色中的数据观测站</figcaption>
+        </figure>
+        <figure class="rsb-wall__item">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 220'%3E%3Crect width='320' height='220' fill='%23231d2e'/%3E%3Ccircle cx='160' cy='90' r='42' fill='%238a7bff' opacity='0.45'/%3E%3Cpath d='M110 190 a50 50 0 0 1 100 0z' fill='%238a7bff' opacity='0.7'/%3E%3Crect x='40' y='30' width='90' height='8' rx='4' fill='%23ffffff' opacity='0.3'/%3E%3C/svg%3E" alt="社区影像：戴着耳机的剪辑夜">
+          <figcaption>@剪到凌晨 · 剪辑夜</figcaption>
+        </figure>
+        <figure class="rsb-wall__item">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 220'%3E%3Crect width='320' height='220' fill='%23132018'/%3E%3Cg fill='%2337d6d0' opacity='0.55'%3E%3Ccircle cx='70' cy='60' r='16'/%3E%3Ccircle cx='130' cy='40' r='10'/%3E%3Ccircle cx='210' cy='70' r='13'/%3E%3C/g%3E%3Cpath d='M0 170 Q90 120 180 165 T320 150 V220 H0z' fill='%231b2a20'/%3E%3C/svg%3E" alt="社区影像：清晨六点的公园长椅">
+          <figcaption>@早班玩家 · 清晨六点</figcaption>
+        </figure>
+        <figure class="rsb-wall__item">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 220'%3E%3Crect width='320' height='220' fill='%23241616'/%3E%3Cg stroke='%23e5372c' stroke-width='2' opacity='0.75'%3E%3Cpath d='M40 60 h240 M40 100 h200 M40 140 h240 M40 180 h160'/%3E%3C/g%3E%3Crect x='230' y='30' width='60' height='26' rx='13' fill='%23ffcf3f'/%3E%3C/svg%3E" alt="社区影像：写满批注的爆料核对表">
+          <figcaption>@核对强迫症 · 批注</figcaption>
+        </figure>
+        <figure class="rsb-wall__item rsb-wall__item--wide">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 220'%3E%3Crect width='480' height='220' fill='%23111a26'/%3E%3Cpath d='M0 190 L90 120 L180 170 L280 90 L380 150 L480 100 V220 H0z' fill='%231a2739'/%3E%3Cg fill='%23ffcf3f' opacity='0.8'%3E%3Ccircle cx='280' cy='60' r='4'/%3E%3Ccircle cx='360' cy='40' r='3'/%3E%3Ccircle cx='150' cy='50' r='3'/%3E%3C/g%3E%3Crect x='30' y='30' width='120' height='9' rx='4' fill='%2337d6d0' opacity='0.7'/%3E%3C/svg%3E" alt="社区影像：夜跑时路过的城市天际线">
+          <figcaption>@夜跑观察者 · 城市天际线</figcaption>
+        </figure>
+        <figure class="rsb-wall__item">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 220'%3E%3Crect width='320' height='220' fill='%23201a12'/%3E%3Crect x='50' y='80' width='220' height='90' rx='8' fill='%232c2418' stroke='%23ffcf3f' stroke-width='1.4'/%3E%3Ccircle cx='160' cy='125' r='24' fill='none' stroke='%23ffcf3f' stroke-width='2'/%3E%3Ccircle cx='160' cy='125' r='8' fill='%23ffcf3f'/%3E%3C/svg%3E" alt="社区影像：老式相机与新买的胶卷">
+          <figcaption>@胶片小卖部 · 新胶卷</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 评价 + 榜单 -->
+  <section class="rsb-section rsb-section--tight" id="rsb-reviews">
+    <div class="rsb-container">
+      <div class="rsb-section__head">
+        <div>
+          <span class="rsb-eyebrow">Voice · 社区口碑</span>
+          <h2 class="rsb-h2">他们眼中的 <em>r星今日爆料</em></h2>
+          <p class="rsb-section__desc">来自社区成员、合作品牌与创作者的真实反馈，均经授权展示。</p>
+        </div>
+      </div>
+
+      <div class="rsb-reviews">
+        <div class="rsb-review">
+          <div class="rsb-stars">★★★★★</div>
+          <p class="rsb-review__quote">看了一年多，最大的感受是“稳”。别的地方拼速度，这里拼的是对信息的负责。有时候慢了半天，但我更愿意相信它。</p>
+          <div class="rsb-review__foot"><span class="rsb-avatar" style="background:#37d6d0">林</span>小林不吃早饭 · 社区成员</div>
+        </div>
+        <div class="rsb-review">
+          <div class="rsb-stars">★★★★★</div>
+          <p class="rsb-review__quote">作为合作方，最欣赏的是流程透明。素材授权、核对记录、发布时间都能对齐，对接起来非常省心，这在内容行业里不多见。</p>
+          <div class="rsb-review__foot"><span class="rsb-avatar" style="background:#ffcf3f">合</span>协作品牌内容负责人</div>
+        </div>
+        <div class="rsb-review">
+          <div class="rsb-stars">★★★★☆</div>
+          <p class="rsb-review__quote">剪辑水平是真的高，尤其是现场那几期，环境音的层次感很强。唯一的小建议是希望幕后花絮能再多一点。</p>
+          <div class="rsb-review__foot"><span class="rsb-avatar" style="background:#8a7bff">后</span>后期爱好者阿凯</div>
+        </div>
+        <div class="rsb-review">
+          <div class="rsb-stars">★★★★★</div>
+          <p class="rsb-review__quote">我投稿过一次，编辑部居然回了三封邮件，逐条说明为什么这条线索不适合拍。那一刻觉得，被认真对待是件很珍贵的事。</p>
+          <div class="rsb-review__foot"><span class="rsb-avatar" style="background:#e5372c">投</span>投稿人 阿岚</div>
+        </div>
+        <div class="rsb-review">
+          <div class="rsb-stars">★★★★★</div>
+          <p class="rsb-review__quote">喜欢“被证伪的爆料档案”这个专题。愿意公开自己错误的内容团队，值得长期关注。</p>
+          <div class="rsb-review__foot"><span class="rsb-avatar" style="background:#c9bfff">纸</span>纸飞机不落地 · 社区成员</div>
+        </div>
+        <div class="rsb-review">
+          <div class="rsb-stars">★★★★☆</div>
+          <p class="rsb-review__quote">整体内容质量很高，页面和视频的风格也很统一。希望以后能出一些对新手友好的入门类内容，降低理解门槛。</p>
+          <div class="rsb-review__foot"><span class="rsb-avatar" style="background:#37d6d0">新</span>刚入门的小周</div>
+        </div>
+      </div>
+
+      <div class="rsb-rank" style="margin-top:28px">
+        <div class="rsb-rank__panel">
+          <div class="rsb-rank__title"><i></i>本周热度榜</div>
+          <div class="rsb-rank__row"><span class="rsb-rank__no">01</span><span class="rsb-rank__name">凌晨三点的删除动态：一条线索的完整时间线</span><span class="rsb-rank__val">3120 热度</span></div>
+          <div class="rsb-rank__row"><span class="rsb-rank__no">02</span><span class="rsb-rank__name">被过度解读的三条细节：我们逐条标注了可信度</span><span class="rsb-rank__val">2761 热度</span></div>
+          <div class="rsb-rank__row"><span class="rsb-rank__no">03</span><span class="rsb-rank__name">线下试玩会现场：排队两小时的第一手体验记录</span><span class="rsb-rank__val">2486 热度</span></div>
+          <div class="rsb-rank__row"><span class="rsb-rank__no">04</span><span class="rsb-rank__name">一周爆料复盘：五条被证伪、三条仍在追踪</span><span class="rsb-rank__val">2205 热度</span></div>
+          <div class="rsb-rank__row"><span class="rsb-rank__no">05</span><span class="rsb-rank__name">整理爆料三年，他最难的一课是“克制”</span><span class="rsb-rank__val">1974 热度</span></div>
+        </div>
+        <div class="rsb-rank__panel">
+          <div class="rsb-rank__title"><i></i>新人创作者榜</div>
+          <div class="rsb-rank__row"><span class="rsb-rank__no">01</span><span class="rsb-rank__name">小满在等更新</span><span class="rsb-rank__val">6.1万 关注</span></div>
+          <div class="rsb-rank__row"><span class="rsb-rank__no">02</span><span class="rsb-rank__name">档案室 1999</span><span class="rsb-rank__val">13.5万 关注</span></div>
+          <div class="rsb-rank__row"><span class="rsb-rank__no">03</span><span class="rsb-rank__name">剪辑工坊 Atelier</span><span class="rsb-rank__val">7.4万 关注</span></div>
+          <div class="rsb-rank__row"><span class="rsb-rank__no">04</span><span class="rsb-rank__name">橙子现场</span><span class="rsb-rank__val">11.2万 关注</span></div>
+          <div class="rsb-rank__row"><span class="rsb-rank__no">05</span><span class="rsb-rank__name">阿岚访谈录</span><span class="rsb-rank__val">9.8万 关注</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 灵感工具 + 动态 -->
+  <section class="rsb-section" id="rsb-log">
+    <div class="rsb-container">
+      <div class="rsb-section__head">
+        <div>
+          <span class="rsb-eyebrow">Studio · 灵感与动态</span>
+          <h2 class="rsb-h2">创作灵感台 &amp; <em>企业动态</em></h2>
+          <p class="rsb-section__desc">为投稿者准备的选题与结构建议，以及品牌最新官方发布。</p>
+        </div>
+      </div>
+
+      <div class="rsb-split">
+        <div class="rsb-ideas">
+          <div class="rsb-idea">
+            <span class="rsb-idea__no">01</span>
+            <div>
+              <h4>选题灵感：把“今天”缩小到一个具体的人</h4>
+              <p>与其概括整个行业，不如跟拍一位刚刚入行的新人，用一天的时间讲清楚他的犹豫与坚持。</p>
+            </div>
+          </div>
+          <div class="rsb-idea">
+            <span class="rsb-idea__no">02</span>
+            <div>
+              <h4>标题建议：给出可验证的时间与地点</h4>
+              <p>“11 月 18 日晚上，我在城西的试玩会门口等了四十分钟”——具体信息比形容词更能建立信任。</p>
+            </div>
+          </div>
+          <div class="rsb-idea">
+            <span class="rsb-idea__no">03</span>
+            <div>
+              <h4>剪辑思路：先给结论，再给过程</h4>
+              <p>前 15 秒交代你最想说的判断，然后倒回去展示证据，观众会更愿意看完整个核对过程。</p>
+            </div>
+          </div>
+          <div class="rsb-idea">
+            <span class="rsb-idea__no">04</span>
+            <div>
+              <h4>素材建议：保留原始文件与时间戳</h4>
+              <p>所有截图、录音请保留原始文件与创建时间，这是投稿能否进入核对流程的关键。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="rsb-log">
+          <div class="rsb-log__item">
+            <div class="rsb-log__date">2026-11-19</div>
+            <h4>官方发布：「爆料雷达 24H」进入第 46 期</h4>
+            <p>本期新增“可信度分级”标注系统，所有线索按 A/B/C 三级公开评级。</p>
+          </div>
+          <div class="rsb-log__item">
+            <div class="rsb-log__date">2026-11-16</div>
+            <h4>企业动态：与三家本地影像机构达成内容合作</h4>
+            <p>合作将围绕城市创作者纪录展开，首期作品预计十二月上线官方网站。</p>
+          </div>
+          <div class="rsb-log__item">
+            <div class="rsb-log__date">2026-11-12</div>
+            <h4>社区共创计划第二季开放报名</h4>
+            <p>面向所有社区成员征集选题，入选者将获得拍摄支持与官方联合署名。</p>
+          </div>
+          <div class="rsb-log__item">
+            <div class="rsb-log__date">2026-11-08</div>
+            <h4>内容更新：影像资料库开放检索</h4>
+            <p>档案室 1999 的旧资料整理成果已接入站内搜索，支持按年份与主题筛选。</p>
+          </div>
+          <div class="rsb-log__item">
+            <div class="rsb-log__date">2026-11-02</div>
+            <h4>品牌故事：r星今日爆料的五年核对方法论</h4>
+            <p>发布长篇图文，完整回顾从三人小组到内容生态的成长路径与关键判断。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ + 联系 -->
+  <section class="rsb-section rsb-section--tight" id="rsb-faq">
+    <div class="rsb-container">
+      <div class="rsb-section__head">
+        <div>
+          <span class="rsb-eyebrow">Help · 帮助与联系</span>
+          <h2 class="rsb-h2">关于投稿、口碑与 <em>合作</em>的常见问题</h2>
+          <p class="rsb-section__desc">以下问题按近期社区提问频次排序，点击可展开查看详细说明。</p>
+        </div>
+      </div>
+
+      <div class="rsb-bottom">
+        <div class="rsb-faq">
+          <details class="rsb-faq__item" open>
+            <summary>如何向 r星今日爆料投稿线索？</summary>
+            <p>通过本页“投稿入口”提交，需包含事件梗概、时间地点、至少一份原始素材与你的联系方式。编辑部会在 72 小时内给出是否进入核对流程的回复。</p>
+          </details>
+          <details class="rsb-faq__item">
+            <summary>线索被采用后会有署名和报酬吗？</summary>
+            <p>会。所有被采用的线索均在片尾明确署名，并根据内容体量与核对难度提供稿酬。若你希望匿名，我们也会在片中说明“应投稿人要求匿名”。</p>
+          </details>
+          <details class="rsb-faq__item">
+            <summary>为什么有的爆料更新较慢？</summary>
+            <p>因为我们坚持至少两个独立来源才能发布。若信息仅有一个来源，我们会先放入“追踪池”，待交叉核对完成后再公开，这个过程通常需要一到三天。</p>
+          </details>
+          <details class="rsb-faq__item">
+            <summary>如何申请成为签约创作者？</summary>
+            <p>提交三支代表作与一份创作计划，通过初筛后会安排一次线上沟通。我们更看重稳定产出与信息责任感，而非单纯的粉丝量。</p>
+          </details>
+          <details class="rsb-faq__item">
+            <summary>品牌或机构可以合作吗？</summary>
+            <p>可以。合作形式包括联合专题、线下活动纪录与内容共建。我们会对合作内容进行明确标注，不接受影响核对结论的商务条款。</p>
+          </details>
+          <details class="rsb-faq__item">
+            <summary>发现内容有误怎么反馈？</summary>
+            <p>欢迎通过下方联系方式提交勘误，附上你的依据。确认后我们会在 24 小时内更新视频说明栏，并在“被证伪的爆料档案”中记录修正过程。</p>
+          </details>
+        </div>
+
+        <aside class="rsb-contact" id="rsb-contact">
+          <h3 class="rsb-h3" style="margin-bottom:14px">联系 r星今日爆料官方网站</h3>
+          <div class="rsb-contact__row"><span>投稿与合作</span><b>studio@rstar-burst.cn</b></div>
+          <div class="rsb-contact__row"><span>内容勘误</span><b>check@rstar-burst.cn</b></div>
+          <div class="rsb-contact__row"><span>商务咨询</span><b>bd@rstar-burst.cn</b></div>
+          <div class="rsb-contact__row"><span>办公地址</span><b>城市西区影像园 3 号楼</b></div>
+          <div class="rsb-contact__row"><span>工作时间</span><b>周一至周五 10:00 – 19:00</b></div>
+          <button class="rsb-btn rsb-btn--primary rsb-contact__btn" type="button" data-rsb-open="submit">打开投稿入口</button>
+          <button class="rsb-btn rsb-btn--ghost rsb-contact__btn" type="button" data-rsb-open="share">分享官方网站</button>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="rsb-footer">
+  <div class="rsb-container">
+    <div class="rsb-footer__grid">
+      <div>
+        <div class="rsb-footer__brand">
+          <span class="rsb-logo__mark" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <path d="M4 20V5l6 7 2-4 8 12H4z" fill="#ffcf3f"/>
+              <circle cx="18" cy="6" r="3" fill="#e5372c"/>
+            </svg>
+          </span>
+          <span style="font-size:16px;font-weight:800">r星今日爆料</span>
+        </div>
+        <p>r星今日爆料官方网站，持续运营的游戏与数字生活视频品牌。以原创、正版、高清、专业为出品标准，深耕内容生态，为创作者与玩家提供值得信赖的爆料与深度内容。</p>
+      </div>
+      <div>
+        <h5>内容栏目</h5>
+        <ul>
+          <li>爆料雷达 24H</li>
+          <li>深度追踪</li>
+          <li>城市创作者生存报告</li>
+          <li>社区共创计划</li>
+        </ul>
+      </div>
+      <div>
+        <h5>参与方式</h5>
+        <ul>
+          <li>提交爆料线索</li>
+          <li>申请签约创作者</li>
+          <li>报名共创计划</li>
+          <li>内容勘误反馈</li>
+        </ul>
+      </div>
+      <div>
+        <h5>关于品牌</h5>
+        <ul>
+          <li>品牌故事</li>
+          <li>企业动态</li>
+          <li>合作品牌</li>
+          <li>社会责任</li>
+        </ul>
+      </div>
+    </div>
+    <div class="rsb-footer__copy">
+      <span>© 2026 r星今日爆料官方网站 · 版权所有 · 持续运营中</span>
+      <span>内容备案号：RST-BURST-2026 · 官方发布 · 正版内容</span>
+    </div>
+  </div>
+</footer>
+
+<button class="rsb-top" id="rsbTopBtn" type="button" aria-label="回到顶部">↑</button>
+<div class="rsb-toast" id="rsbToast" role="status" aria-live="polite"></div>
+
+<!-- 投稿弹窗 -->
+<div class="rsb-modal" id="rsbModalSubmit" role="dialog" aria-modal="true" aria-labelledby="rsbSubmitTitle">
+  <div class="rsb-modal__mask" data-rsb-close></div>
+  <div class="rsb-modal__panel">
+    <button class="rsb-modal__close" type="button" data-rsb-close aria-label="关闭">×</button>
+    <h3 id="rsbSubmitTitle">投稿入口</h3>
+    <p>请简述你掌握的线索，编辑部会在 72 小时内回复。请确保素材为原创或已获授权。</p>
+    <input type="text" placeholder="你的称呼 / 创作者昵称" aria-label="昵称">
+    <input type="text" placeholder="联系方式（邮箱或社交账号）" aria-label="联系方式">
+    <textarea rows="4" placeholder="线索梗概：发生了什么、时间地点、你手上的原始素材" aria-label="线索梗概"></textarea>
+    <button class="rsb-btn rsb-btn--primary" type="button" id="rsbSubmitSend" style="width:100%;justify-content:center">提交线索</button>
+  </div>
+</div>
+
+<!-- 分享弹窗 -->
+<div class="rsb-modal" id="rsbModalShare" role="dialog" aria-modal="true" aria-labelledby="rsbShareTitle">
+  <div class="rsb-modal__mask" data-rsb-close></div>
+  <div class="rsb-modal__panel">
+    <button class="rsb-modal__close" type="button" data-rsb-close aria-label="关闭">×</button>
+    <h3 id="rsbShareTitle">分享 r星今日爆料</h3>
+    <p>把今天的爆料分享给同样在意信息准确性的朋友。</p>
+    <div class="rsb-share">
+      <button class="rsb-share__item" type="button" data-rsb-share="微信">微信</button>
+      <button class="rsb-share__item" type="button" data-rsb-share="微博">微博</button>
+      <button class="rsb-share__item" type="button" data-rsb-share="QQ">QQ</button>
+      <button class="rsb-share__item" type="button" data-rsb-share="邮件">邮件</button>
+    </div>
+    <button class="rsb-btn rsb-btn--ghost" type="button" id="rsbCopyLink" style="width:100%;justify-content:center">复制页面链接</button>
+  </div>
+</div>
+
+<!-- 作者弹窗 -->
+<div class="rsb-modal" id="rsbModalAuthor" role="dialog" aria-modal="true" aria-labelledby="rsbAuthorTitle">
+  <div class="rsb-modal__mask" data-rsb-close></div>
+  <div class="rsb-modal__panel">
+    <button class="rsb-modal__close" type="button" data-rsb-close aria-label="关闭">×</button>
+    <h3 id="rsbAuthorTitle">创作者档案</h3>
+    <p id="rsbAuthorBody">加载中…</p>
+    <button class="rsb-btn rsb-btn--ghost" type="button" data-rsb-close style="width:100%;justify-content:center">关闭</button>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- 移动端导航 ---------- */
+  var burger = document.getElementById('rsbBurger');
+  var nav = document.getElementById('rsbNav');
+  if (burger && nav){
+    burger.addEventListener('click', function(){
+      var open = nav.classList.toggle('is-open');
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    nav.addEventListener('click', function(e){
+      if (e.target.tagName === 'A'){
+        nav.classList.remove('is-open');
+        burger.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  /* ---------- Toast ---------- */
+  var toast = document.getElementById('rsbToast');
+  var toastTimer = null;
+  function showToast(msg){
+    if (!toast) return;
+    toast.textContent = msg;
+    toast.classList.add('is-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove('is-show'); }, 2200);
+  }
+
+  /* ---------- 搜索反馈 ---------- */
+  var searchInput = document.getElementById('rsbSearchInput');
+  var searchHint = document.getElementById('rsbSearchHint');
+  var searchData = [
+    '凌晨三点的删除动态：一条线索的完整时间线',
+    '线下试玩会现场：排队两小时的第一手体验记录',
+    '整理爆料三年，他最难的一课是“克制”',
+    '一期爆料视频的诞生：从选题会到成片归档',
+    '被过度解读的三条细节：我们逐条标注了可信度',
+    '夜行地图：一场城市爆料采集行动的夜间记录',
+    '爆料雷达 24H 专题',
+    '城市创作者生存报告 专题',
+    '创作者 老秦说线索',
+    '创作者 橙子现场'
+  ];
+  if (searchInput && searchHint){
+    searchInput.addEventListener('input', function(){
+      var kw = searchInput.value.trim();
+      if (!kw){
+        searchHint.classList.remove('is-show');
+        searchHint.innerHTML = '';
+        return;
+      }
+      var hits = searchData.filter(function(x){ return x.indexOf(kw) > -1; }).slice(0,4);
+      if (hits.length === 0){
+        searchHint.innerHTML = '暂无与“<b>' + escapeHtml(kw) + '</b>”直接匹配的结果，试试“爆料”“现场”或“创作者”。';
+      } else {
+        searchHint.innerHTML = '找到 ' + hits.length + ' 条相关结果：<br>' +
+          hits.map(function(h){ return '· ' + h.replace(new RegExp(escapeHtml(kw),'g'), '<b>' + escapeHtml(kw) + '</b>'); }).join('<br>');
+      }
+      searchHint.classList.add('is-show');
+    });
+    searchInput.addEventListener('keydown', function(e){
+      if (e.key === 'Enter'){
+        e.preventDefault();
+        showToast('已按“' + searchInput.value.trim() + '”检索站内内容');
+        searchHint.classList.remove('is-show');
+      }
+    });
+    document.addEventListener('click', function(e){
+      if (!searchInput.contains(e.target) && !searchHint.contains(e.target)){
+        searchHint.classList.remove('is-show');
+      }
+    });
+  }
+  function escapeHtml(s){
+    return String(s).replace(/[&<>"']/g, function(c){
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+    });
+  }
+
+  /* ---------- 点赞 / 收藏 ---------- */
+  document.querySelectorAll('[data-rsb-like]').forEach(function(btn){
+    var base = parseInt(btn.getAttribute('data-rsb-like'), 10) || 0;
+    var active = false;
+    btn.addEventListener('click', function(){
+      active = !active;
+      var num = base + (active ? 1 : 0);
+      btn.innerHTML = '♥ <b>' + num + '</b>';
+      btn.classList.toggle('is-like', active);
+      showToast(active ? '已点赞，感谢支持原创内容' : '已取消点赞');
+    });
+  });
+  document.querySelectorAll('[data-rsb-save]').forEach(function(btn){
+    var saved = false;
+    btn.addEventListener('click', function(){
+      saved = !saved;
+      btn.textContent = saved ? '★ 已收藏' : '☆ 收藏';
+      btn.classList.toggle('is-save', saved);
+      showToast(saved ? '已加入你的收藏夹' : '已从收藏夹移除');
+    });
+  });
+
+  /* ---------- 分类筛选 ---------- */
+  var filterBar = document.getElementById('rsbFilterBar');
+  var cardGrid = document.getElementById('rsbCardGrid');
+  if (filterBar && cardGrid){
+    filterBar.addEventListener('click', function(e){
+      var btn = e.target.closest('[data-rsb-filter]');
+      if (!btn) return;
+      filterBar.querySelectorAll('.rsb-filter').forEach(function(b){ b.classList.remove('is-on'); });
+      btn.classList.add('is-on');
+      var cat = btn.getAttribute('data-rsb-filter');
+      var shown = 0;
+      cardGrid.querySelectorAll('.rsb-card').forEach(function(card){
+        var ok = (cat === 'all') || (card.getAttribute('data-rsb-cat') === cat);
+        card.style.display = ok ? '' : 'none';
+        if (ok) shown++;
+      });
+      showToast(cat === 'all' ? '已显示全部爆料视频' : '已筛选：' + cat + '（' + shown + ' 条）');
+    });
+  }
+
+  /* ---------- 弹窗通用 ---------- */
+  var modals = {
+    submit: document.getElementById('rsbModalSubmit'),
+    share: document.getElementById('rsbModalShare'),
+    author: document.getElementById('rsbModalAuthor')
+  };
+  function openModal(key){
+    var m = modals[key];
+    if (!m) return;
+    m.classList.add('is-show');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeAllModals(){
+    Object.keys(modals).forEach(function(k){
+      if (modals[k]) modals[k].classList.remove('is-show');
+    });
+    document.body.style.overflow = '';
+  }
+  document.addEventListener('click', function(e){
+    var opener = e.target.closest('[data-rsb-open]');
+    if (opener){
+      openModal(opener.getAttribute('data-rsb-open'));
+      return;
+    }
+    if (e.target.closest('[data-rsb-close]')){
+      closeAllModals();
+    }
+  });
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape') closeAllModals();
+  });
+
+  /* ---------- 投稿提交 ---------- */
+  var submitSend = document.getElementById('rsbSubmitSend');
+  if (submitSend){
+    submitSend.addEventListener('click', function(){
+      closeAllModals();
+      showToast('线索已提交，编辑部将在 72 小时内回复');
+    });
+  }
+
+  /* ---------- 分享 & 复制 ---------- */
+  document.querySelectorAll('[data-rsb-share]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      showToast('已生成分享内容，可粘贴至' + btn.getAttribute('data-rsb-share'));
+    });
+  });
+  var copyBtn = document.getElementById('rsbCopyLink');
+  if (copyBtn){
+    copyBtn.addEventListener('click', function(){
+      var url = window.location.href;
+      if (navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(url).then(function(){
+          showToast('页面链接已复制到剪贴板');
+        }).catch(function(){
+          showToast('复制失败，请手动复制地址栏链接');
+        });
+      } else {
+        showToast('当前浏览器不支持自动复制，请手动复制地址栏链接');
+      }
+    });
+  }
+
+  /* ---------- 作者弹窗 ---------- */
+  document.querySelectorAll('[data-rsb-author]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var raw = btn.getAttribute('data-rsb-author') || '';
+      var parts = raw.split('|');
+      var title = document.getElementById('rsbAuthorTitle');
+      var body = document.getElementById('rsbAuthorBody');
+      if (title) title.textContent = parts[0] || '创作者档案';
+      if (body) body.textContent = parts[1] || '暂无更多信息。';
+      openModal('author');
+    });
+  });
+
+  /* ---------- 回到顶部 ---------- */
+  var topBtn = document.getElementById('rsbTopBtn');
+  if (topBtn){
+    window.addEventListener('scroll', function(){
+      if (window.scrollY > 520) topBtn.classList.add('is-show');
+      else topBtn.classList.remove('is-show');
+    }, { passive:true });
+    topBtn.addEventListener('click', function(){
+      window.scrollTo({ top:0, behavior:'smooth' });
+    });
+  }
+
+  /* ---------- 数字滚动 ---------- */
+  var counters = document.querySelectorAll('[data-rsb-count]');
+  if ('IntersectionObserver' in window && counters.length){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting){
+          var el = entry.target;
+          var target = parseInt(el.getAttribute('data-rsb-count'), 10) || 0;
+          var start = performance.now();
+          var dur = 1300;
+          function step(now){
+            var p = Math.min((now - start) / dur, 1);
+            var eased = 1 - Math.pow(1 - p, 3);
+            el.textContent = Math.round(target * eased).toLocaleString('zh-CN');
+            if (p < 1) requestAnimationFrame(step);
+          }
+          requestAnimationFrame(step);
+          io.unobserve(el);
+        }
+      });
+    }, { threshold:0.5 });
+    counters.forEach(function(c){ io.observe(c); });
+  } else {
+    counters.forEach(function(c){ c.textContent = c.getAttribute('data-rsb-count'); });
+  }
+
+  /* ---------- 导航高亮 ---------- */
+  var links = document.querySelectorAll('.rsb-nav__link');
+  var sections = ['rsb-top','rsb-focus','rsb-videos','rsb-topics','rsb-creators','rsb-log','rsb-faq','rsb-contact'];
+  if ('IntersectionObserver' in window){
+    var spy = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (en.isIntersecting){
+          var id = en.target.id;
+          links.forEach(function(l){
+            l.classList.toggle('is-active', l.getAttribute('href') === '#' + id);
+          });
+        }
+      });
+    }, { rootMargin:'-160px 0px -60% 0px', threshold:0 });
+    sections.forEach(function(id){
+      var el = document.getElementById(id);
+      if (el) spy.observe(el);
+    });
+  }
+
+})();
+</script>
+</body>
+              </html>
